@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+// standard phone
+.cover{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 900px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(50,50,50,0.2), rgba(100,100,100,0.1), rgba(150,150,150,0.1), white, white, white, rgba(150,150,150,0.1), rgba(100,100,100,0.1), rgba(50,50,50,0.2));
+    .content{
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        padding-inline: 15px;
+        padding-top: 118px;
+        text-align: center;
+        .text{
+            .heading{
+                color: #183b56;
+                font-size: 46px;
+                font-weight: 800;
+                margin-bottom: 19px;
+            }
+            .paragraph{
+                margin-bottom: 29px;
+                b{
+                    border-bottom: 1px solid red;
+                    font-weight: normal !important;
+                }
+            }
+            button{
+                width: 250px !important;
+                height: 58px !important;
+                margin-block: 15px;
+                &.primary{
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+} 
+@media only screen and (min-device-width: 1150px) {
+    .cover{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(-45deg, #1D1D20, rgb(82, 82, 90));
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .signs{
+            position: absolute;
+            top: 50px;
+            left: 455px;
+            opacity: 0.5;
+            z-index: 10000;
+            width: 100%;
+            height: 100%;
+            i{
+                font-family: 'Patrick Hand', cursive;
+                font-size: 18px;
+                display: block;
+            }
+            .row-one{
+                position: absolute;
+                top: 110px;
+            }
+            .row-two{
+                position: absolute;
+                bottom: 155px;
+            }
+        }
+        .scroll-downs {
+            position: absolute;
+            right: 0;
+            bottom: 90px;
+            left: 0;
+            margin: auto;
+            width : 35px;
+            height: 35px;
+            opacity: 0.5;
+            transform: scale(1.1);
+          }
+          .mousey {
+            width: 3px;
+            padding: 5px 13px;
+            height: 35px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            opacity: 0.75;
+            box-sizing: content-box;
+        }
+        .scroller {
+            width: 4px;
+            height: 22px;
+            border-radius: 25%;
+            background-color: #183b56;
+            animation-name: scroll;
+            animation-duration: 2.2s;
+            animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+            animation-iteration-count: infinite;
+          }
+          @keyframes scroll {
+            0% { opacity: 0; }
+            10% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(65px); opacity: 0;}
+          }
+        .cover-image{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .content{
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-inline: 0;
+            top: -50px;
+            .text{
+                .heading{
+                    color: #183b56;
+                    font-size: 80px;
+                    font-weight: 800;
+                    margin-bottom: 39px;
+                }
+                .paragraph{
+                    margin-bottom: 38px;
+                    font-size: 22px;
+                }
+                button{
+                    width: 340px !important;
+                    height: 61px !important;
+                }
+            }
+        }
+    } 
+}
+

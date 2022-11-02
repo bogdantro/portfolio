@@ -1,0 +1,79 @@
+// standard phone
+.page-for-form{
+    padding-bottom: 20px;
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+    .contact-us-img{
+        display: none;
+    }
+    @media only screen and (min-device-width: 1150px) {       
+        .contact-us-img{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 52%;
+            transform: translateY(-50%);
+            width: 490px;
+            height: auto;
+            box-shadow: 35px 5px 20px #a34ae277;
+        }
+    }
+    // form
+    form{
+        margin: 0 auto;
+        text-align: left;
+        width: 100%;
+        box-shadow: unset;
+        padding: 20px;
+        position: relative;
+        // heading
+        .heading{
+            font-size: 33px;
+            color: #F9F6EE;
+            font-weight: 800;
+        }
+        // inputs and labels
+        .inputs-labels{
+            // label
+            label{
+                color: #F9F6EE;
+                font-size: 15px;
+            }
+            // input & textarea
+            input, textarea{
+                border-radius: 4px;
+                padding: 5px;
+                padding-left: 8px;
+                border: 2px solid #a34ae2;
+                outline: none;
+                color: #F9F6EE;
+                font-size: 14px;
+                width: 82%;
+                max-width: 500px;
+                height: 45px;
+                cursor: pointer;
+                background: transparent;
+                transition: .1s;
+                &:hover{
+                    background: #254e6d;
+                }
+                &:focus{
+                    cursor: unset;
+                    background: #183b56;
+                    border: 4px solid #a34ae2;
+                }
+            }
+            // textarea
+            textarea{
+                height: 100px;
+                min-height: 70px;
+                max-height: 300px;
+            }
+        }
+        // form actions
+        .form-actions{
+            margin-top: 45px;
+        }
+    }
+}
