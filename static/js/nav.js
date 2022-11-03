@@ -16,12 +16,22 @@ function menu(){
 
     if (window.getComputedStyle(sidebar,null).getPropertyValue("opacity") == '0'){
         sidebar.classList.add('active');
-        hamburger.classList.add('active');
+        setTimeout(() => {
+            hamburger.classList.add('click1');
+        }, 0);
+        setTimeout(() => {
+            hamburger.classList.add('click2');
+        }, 300);
         navbar.classList.add('active');
         logo.classList.add('active');
     }else{
         sidebar.classList.remove('active');
-        hamburger.classList.remove('active');
+        setTimeout(() => {
+            hamburger.classList.remove('click1');
+        }, 0);
+        setTimeout(() => {
+            hamburger.classList.remove('click2');
+        }, 0);
         navbar.classList.remove('active');
         logo.classList.remove('active');
     }

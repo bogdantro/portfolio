@@ -1,56 +1,3 @@
-@media only screen and (min-device-width: 1150px) {
-  .cursor {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    top: 0;
-    left: 0;
-    background: #183B56;
-    z-index: 100000000000000000000;
-    pointer-events: none;
-  }
-  .cursor.link {
-    opacity: 0.4;
-    transition: 0.1s ease;
-  }
-  .cursor-lazy {
-    opacity: 0.8;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    border: 2px solid #183B56;
-    transform: translate3d(-50%, -50%, 0);
-    top: 0;
-    left: 0;
-    background: transparent;
-    transition: 0.1s ease;
-    z-index: 100000000000000000000;
-    pointer-events: none;
-  }
-  .cursor-lazy.link {
-    width: 30px;
-    height: 30px;
-    opacity: 0.4;
-  }
-  .cursor-lazy.click {
-    width: 20px;
-    height: 20px;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: "Alata", sans-serif;
-    box-sizing: border-box;
-  }
-  html, body {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    margin: 0 auto;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -67,10 +14,17 @@
   display: none; /* Safari and Chrome */
 }
 
+html {
+  background: #183B56 !important;
+}
+
 html, body {
+  background: radial-gradient(#2e6d9e, #215074, #183B56);
   overflow-x: hidden;
   scroll-behavior: smooth;
   margin: 0 auto;
+  height: 100%;
+  width: 100%;
 }
 
 .width {
@@ -589,5 +543,62 @@ button.secondary:hover {
     transform: translate(80px, 0);
     background-color: #f5634a;
     width: 25px;
+  }
+}
+
+@media only screen and (min-device-width: 1150px) {
+  .cursor {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    top: 0;
+    left: 0;
+    background: #183B56;
+    z-index: 100000000000000000000;
+    pointer-events: none;
+  }
+  .cursor.link {
+    opacity: 0.4;
+    transition: 0.1s ease;
+  }
+  .cursor-lazy {
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid #183B56;
+    transform: translate3d(-50%, -50%, 0);
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 100000000000000000000;
+    pointer-events: none;
+  }
+  .cursor-lazy.link {
+    width: 30px;
+    height: 30px;
+    opacity: 0.4;
+  }
+  .cursor-lazy.click {
+    width: 20px;
+    height: 20px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Alata", sans-serif;
+    box-sizing: border-box;
+  }
+  html {
+    background-color: #f5634a !important;
+  }
+  html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=global.css.map */
