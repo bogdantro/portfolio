@@ -18,7 +18,7 @@ $loader: rgb(80, 104, 180);
   } 
   
   html, body {
-    background: radial-gradient(#2e6d9e, #215074, #183B56);
+    background: radial-gradient(#286594, #215074, #183B56);
     overflow-x: hidden;
     scroll-behavior: smooth;
     margin: 0 auto;
@@ -105,6 +105,15 @@ button{
 
 
 @media only screen and (min-device-width: 1150px)  {
+  html, body {
+    background: radial-gradient(#2e6d9e, #215074, #183B56);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+  }
 }
   
 
