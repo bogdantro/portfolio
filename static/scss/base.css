@@ -15,9 +15,9 @@
 }
 .cover .content .cover-image {
   position: absolute;
-  top: 170px;
-  left: 20px;
-  opacity: 0.2;
+  top: 180px;
+  left: 15px;
+  opacity: 0.25;
 }
 .cover .content .cover-image img {
   width: 170px;
@@ -28,7 +28,7 @@
 }
 .cover .content .text {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .cover .content .text .headingp {
   color: #64FFDA;

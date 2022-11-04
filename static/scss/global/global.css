@@ -15,8 +15,9 @@
 }
 
 html, body {
-  background: radial-gradient(#286594, #215074, #183B56);
+  background: #215074;
   overflow-x: hidden;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   margin: 0 auto;
   height: 100vh;
@@ -114,7 +115,7 @@ button.secondary:hover {
   padding: 20px;
   border-radius: 5px;
   text-align: center;
-  background-color: #215074;
+  background-color: #184364;
   position: fixed;
   left: 0;
   top: 0;
