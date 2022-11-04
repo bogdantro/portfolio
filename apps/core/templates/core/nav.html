@@ -40,10 +40,13 @@
 
 <div id="desNav">
     <div class="width">
-        <div onmouseover="cursorLink()" onmouseleave="cursorLinkLeave()" title="Back to home page" onclick="window.location.href='/'" id="logo" class="logo">Bogdan <span>Trohanel</span></div>
+        <div onclick="window.location.href='/'" id="logo" class="logo" title="Back to homepage">
+            <img src="{% static 'images/logo/logo.png' %}" alt="">
+        </div>
         <div class="menu">
             <a onmouseover="cursorLink()" onmouseleave="cursorLinkLeave()" href="#aboutMe">About me</a>
             <a onmouseover="cursorLink()" onmouseleave="cursorLinkLeave()" href="#whatIDo">What I do</a>
+            <a onmouseover="cursorLink()" onmouseleave="cursorLinkLeave()" href="#whatIDo">My goal</a>
             <a onmouseover="cursorLink()" onmouseleave="cursorLinkLeave()" href="#myWork">Projects</a>
             <a onmouseover="cursorLink()" onmouseleave="cursorLinkLeave()" href="#contactForm">Get in touch<i class="fa-solid fa-caret-right"></i></a>
         </div>

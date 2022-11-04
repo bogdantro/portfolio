@@ -6,13 +6,17 @@
 //     if ($(window).width() > 1150) {
 //         setTimeout(() => {
 //             loader.classList.add('hidden');
-//         }, 200);
+//         }, 1500);
+//         setTimeout(() => {
+//             document.getElementById('joke').classList.add('active')
+//         }, 2000);
 //     }else{
 //         setTimeout(() => {
-//             setTimeout(() => {
-//                 loader.classList.add('hidden');
-//             }, 200);
-//         }, 200);
+//             document.getElementById('joke').classList.add('active')
+//         }, 1500);
+//         setTimeout(() => {
+//             loader.classList.add('hidden');
+//         }, 2000);
 //     }
 // }
 

@@ -14,44 +14,9 @@
     padding: 15px 35px;
     position: relative;
     top: 0;
-    z-index: 10000000000000000000;
+    z-index: 10000;
     transition: .2s;
     background: transparent;
-    &::before{
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: rgba(255, 255, 255, 0.8);
-        width: 100%;
-        height: 100%;
-        transition: .3s;
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-    // &.sticky{
-    // box-shadow: 0 2px 2px #64ffdb0c;;
-    //     &::before{
-    //         content: '';
-    //         display: block;
-    //         position: absolute;
-    //         left: 0;
-    //         top: 0;
-    //         background: rgba(255, 255, 255, 0.91);
-    //         width: 100%;
-    //         height: 100%;
-    //         transition: .3s;
-    //         opacity: 1;
-    //         transform: translateY(0px);
-    //         box-shadow: 1px 0 5px rgba(0,0,0,0.1);
-    //     }
-    //     .logo{
-    //         span{
-    //             border-bottom: 1px solid #14a5df;
-    //         }
-    //     }
-    // }
     .logo{
         z-index: 1000;
         position: relative;
@@ -241,43 +206,17 @@
     }
     #desNav{
         width: 100%;
-        height: 75px;
+        height: 85px;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
         top: 0;
         z-index: 10000000000000000000;
         transition: .2s;
-        padding-inline: 5px;
+        padding: 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &::after{
-            content: '';
-            display: block;
-            position: absolute;
-            left: -300px;
-            bottom: -4px;
-            background: #9738da79;
-            width: 100%;
-            height: 2px;
-            transition: .3s;
-            opacity: 0;
-        }
-        &.sticky{
-            background-color: #183b56cc !important;
-            &::after{
-                content: '';
-                display: block;
-                position: absolute;
-                left: 0;
-                bottom: -4px;
-                background: #9738da79;
-                width: 100%;
-                height: 2px;
-                opacity: 1;
-            }
-        }
         .width{
             display: flex;
             justify-content: space-between;
@@ -285,29 +224,26 @@
             margin: auto;
         }
         .logo{
-            font-size: 20px;
-            letter-spacing: -1.7px;
-            font-weight: 500;
-            color: #183b56;
-            transition: .2s;
-            cursor: pointer;
-            &.active{
-                transition: .5s;
-            }
-            span{
-                font-size: 10px;
-                font-weight: normal;
-                letter-spacing: normal;
-                border-bottom: 1px solid #183b56;
-                padding-bottom: 2px;
+            z-index: 1000;
+            position: relative;
+            left: -38px;
+            top: 3px;
+            img{
+                cursor: pointer;
+                transition: .3s;
+                width: 120px;
+                height: auto;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
         .menu{
             width: max-content;
             padding-inline: 10px;
             a{
-                color: #183b56;
-                font-size: 15px;
+                color: #f9f6eeb4;
+                font-size: 16px;
                 padding-inline: 7px;
                 padding-block: 26px;
                 margin-inline: 16px;
@@ -323,19 +259,20 @@
                     padding-left: 10px;
                 }
                 &:last-child{
-                    background: #14a5df;
-                    padding: 8px;
+                    border: 2px solid #64FFDA !important;
+                    color: #64FFDA;
+                    background: transparent;
+                    padding: 11px 16px;
                     border-radius: 4px;
-                    border: 2px solid transparent;
-                    margin-right: 0;
-                    color: #F9F6EE;
+                    margin-top: 10px;
+                    opacity: 0.9;
+                    font-size: 15px;
                     &:hover{
-                        background: #0b82b1;
-                        border: 2px solid #0b82b1;
+                        background: #376d9691;
                     }
                 }
                 &:hover{
-                    border-bottom: 2px solid #14a5df;
+                    border-bottom: 2px solid #64FFDA;
                 }
                 &:active{
                     border-bottom: 2px solid transparent;
