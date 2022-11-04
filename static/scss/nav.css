@@ -6,11 +6,11 @@
 #mobileNav {
   width: 100%;
   max-width: 1150px;
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
+  padding: 15px 35px;
   position: relative;
   top: 0;
   z-index: 10000000000000000000;
@@ -43,6 +43,7 @@
   transform: translateY(1px) rotate(180deg);
   padding: 8px;
   margin: -8px;
+  z-index: 1000;
 }
 #mobileNav .hamburger p {
   position: absolute;
@@ -60,6 +61,7 @@
 #mobileNav .hamburger.click1 span {
   -webkit-animation: animation1 0.5s;
           animation: animation1 0.5s;
+  transform: scale(1.15);
 }
 #mobileNav .hamburger.click1 .top-span {
   width: 27px;
@@ -117,14 +119,18 @@
 #mobileNav .hamburger.click2 .bottom-span {
   transform: rotate(45deg) translateX(-5px) translateY(-12px);
 }
+#mobileNav .hamburger.close-txt p {
+  opacity: 0;
+  transition: 0s;
+}
 #mobileNav .hamburger span {
   transition: 0.2s;
-  height: 3px;
+  height: 2px;
   background: #64FFDA;
-  border-radius: 3px;
+  border-radius: 8px;
   display: block;
-  margin-block: 8px;
-  transform: translateX(0) rotate(0);
+  margin-block: 9px;
+  transform: translateX(0) rotate(0) scale(1);
   text-align: center;
   transform-origin: center center;
 }
@@ -138,12 +144,12 @@
   width: 17px;
 }
 #mobileNav .sidebar {
-  background: transparent;
-  height: 100vh;
+  background: radial-gradient(#2e6d9e, #215074, #183B56);
   position: absolute;
-  top: 95px;
+  top: -15px;
   right: -150px;
   width: 100%;
+  height: 100vh;
   z-index: 120;
   opacity: 0;
   pointer-events: none;
@@ -155,8 +161,11 @@
   width: 100%;
   text-align: unset;
   left: 50%;
-  transform: translateY(0) translateX(-50%);
-  height: 100vh;
+  transform: translateY(145px) translateX(-50%);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  pointer-events: visible;
 }
 #mobileNav .sidebar .sidebar-ul li {
   list-style: none;
@@ -176,32 +185,46 @@
   position: relative;
   transition: 0.8s;
   opacity: 0.8;
-  margin-block: 15px;
-  width: 200px;
+  margin-block: 18px;
+  width: 220px;
   left: 50%;
   transform: translateX(-50%);
+  border-bottom: 1px solid transparent !important;
+}
+#mobileNav .sidebar .sidebar-ul li a:hover {
+  border-bottom: 1px solid rgba(249, 246, 238, 0.2941176471) !important;
+}
+#mobileNav .sidebar .sidebar-ul li a:last-child {
+  border: 2px solid #64FFDA !important;
+  color: #64FFDA;
+  background: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+#mobileNav .sidebar .sidebar-ul li a:last-child:hover {
+  background: rgba(55, 109, 150, 0.568627451);
 }
 #mobileNav .sidebar .sidebar-ul li a .top {
   position: absolute;
   left: 0;
-  top: -28px;
+  top: -40px;
   color: #64FFDA;
   font-size: 11px;
   font-family: "Source Code Pro", monospace;
-  opacity: 0.9;
+  opacity: 0.6;
 }
 #mobileNav .sidebar .sidebar-ul li a .bottom {
   position: absolute;
-  left: 0;
-  bottom: -28px;
+  left: -15px;
+  bottom: -83px;
   color: #64FFDA;
   font-size: 11px;
   font-family: "Source Code Pro", monospace;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 #mobileNav .sidebar.active {
   opacity: 1;
-  pointer-events: visible;
   transition: 0.5s;
   right: 0px;
 }
@@ -213,7 +236,7 @@
   #desNav {
     width: 100%;
     height: 75px;
-    position: fixed;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     top: 0;

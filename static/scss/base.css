@@ -1,149 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.cover {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.cover .content {
+  height: 100%;
+  width: 100%;
+  padding-inline: 36px;
+}
+.cover .content .text {
+  text-align: left;
+  margin-top: 50px;
+}
+.cover .content .text .headingp {
+  color: #64FFDA;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+.cover .content .text .small-paragraph {
+  margin-top: 19px;
+  padding-left: 2px;
+  font-size: 15px;
+}
+.cover .content .text h1 {
+  color: rgba(249, 246, 238, 0.8705882353);
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+.cover .content .text h1.opacity {
+  opacity: 0.6;
+}
+.cover .content button {
+  opacity: 0.8;
+  margin-top: 30px;
+  width: 160px !important;
+}
+.cover .bottom-cover {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  pointer-events: visible;
+  opacity: 0.8;
+  z-index: 10000000000000000000000000000;
+}
+.cover .bottom-cover .text p span {
+  border-bottom: 1px solid rgba(100, 255, 219, 0.5490196078);
+  padding-bottom: 5px;
+}
+.cover .bottom-cover .icons i {
+  margin-inline: 8px;
+  padding: 4px;
+  color: rgb(171, 186, 197);
+  opacity: 0.8;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.cover .bottom-cover .icons i:last-child {
+  margin-right: 0;
+}
+.cover .bottom-cover .icons i:hover {
+  color: #64FFDA;
+  transform: scale(1.1);
+}
+
 @media only screen and (min-device-width: 1150px) {
-  .cover {
+  .cover .width {
     width: 100%;
+    max-width: 1150px;
     height: 100%;
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(-45deg, #1D1D20, rgb(82, 82, 90));
-    background-size: 400% 400%;
-    -webkit-animation: gradient 15s ease infinite;
-            animation: gradient 15s ease infinite;
-    height: 100vh;
-  }
-  @-webkit-keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  .cover .signs {
-    position: absolute;
-    top: 50px;
-    left: 455px;
-    opacity: 0.5;
-    z-index: 10000;
-    width: 100%;
-    height: 100%;
-  }
-  .cover .signs i {
-    font-family: "Patrick Hand", cursive;
-    font-size: 18px;
-    display: block;
-  }
-  .cover .signs .row-one {
-    position: absolute;
-    top: 110px;
-  }
-  .cover .signs .row-two {
-    position: absolute;
-    bottom: 155px;
-  }
-  .cover .scroll-downs {
-    position: absolute;
-    right: 0;
-    bottom: 90px;
-    left: 0;
     margin: auto;
-    width: 35px;
-    height: 35px;
-    opacity: 0.5;
-    transform: scale(1.1);
-  }
-  .cover .mousey {
-    width: 3px;
-    padding: 5px 13px;
-    height: 35px;
-    border: 2px solid transparent;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-  }
-  .cover .scroller {
-    width: 4px;
-    height: 22px;
-    border-radius: 25%;
-    background-color: #183b56;
-    -webkit-animation-name: scroll;
-            animation-name: scroll;
-    -webkit-animation-duration: 2.2s;
-            animation-duration: 2.2s;
-    -webkit-animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-            animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-  @-webkit-keyframes scroll {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(65px);
-      opacity: 0;
-    }
-  }
-  @keyframes scroll {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(65px);
-      opacity: 0;
-    }
-  }
-  .cover .cover-image {
-    position: absolute;
-    left: 0;
-    top: 0;
   }
   .cover .content {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-inline: 0;
-    top: -50px;
+    padding: 0;
   }
-  .cover .content .text .heading {
-    color: #183b56;
-    font-size: 80px;
-    font-weight: 800;
-    margin-bottom: 39px;
-  }
-  .cover .content .text .paragraph {
-    margin-bottom: 38px;
-    font-size: 22px;
-  }
-  .cover .content .text button {
-    width: 340px !important;
-    height: 61px !important;
+  .cover .text {
+    margin-top: 100px !important;
   }
 }/*# sourceMappingURL=base.css.map */

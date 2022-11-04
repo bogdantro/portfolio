@@ -24,14 +24,16 @@ function menu(){
         }, 300);
         navbar.classList.add('active');
         logo.classList.add('active');
+        hamburger.classList.remove('close-txt');
     }else{
         sidebar.classList.remove('active');
         setTimeout(() => {
             hamburger.classList.remove('click1');
         }, 0);
+        hamburger.classList.add('close-txt');
         setTimeout(() => {
             hamburger.classList.remove('click2');
-        }, 0);
+        }, 300);
         navbar.classList.remove('active');
         logo.classList.remove('active');
     }
