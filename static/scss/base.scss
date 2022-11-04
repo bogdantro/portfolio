@@ -66,7 +66,7 @@
     }
     .bottom-cover{
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
         left: 0;
         width: 100%;
         height: auto;
@@ -204,7 +204,7 @@
                 pointer-events: visible;
                 opacity: 1 !important;
                 z-index: 1000000000;
-                .text{
+                .bottom-cover-text{
                     margin: 0 !important;
                     padding: 0 !important;
                     top: 0 !important;

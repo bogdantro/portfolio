@@ -67,7 +67,7 @@
 }
 .cover .bottom-cover {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 0;
   width: 100%;
   height: auto;
@@ -217,16 +217,16 @@
     opacity: 1 !important;
     z-index: 1000000000;
   }
-  .cover .content .text .bottom-cover .text {
+  .cover .content .text .bottom-cover .bottom-cover-text {
     margin: 0 !important;
     padding: 0 !important;
     top: 0 !important;
     transform: translateY(-13px);
   }
-  .cover .content .text .bottom-cover .text .bottom-text {
+  .cover .content .text .bottom-cover .bottom-cover-text .bottom-text {
     font-size: 16px;
   }
-  .cover .content .text .bottom-cover .text .bottom-text span {
+  .cover .content .text .bottom-cover .bottom-cover-text .bottom-text span {
     border-bottom: 2px solid rgba(100, 255, 219, 0.6235294118);
     padding-bottom: 8px;
   }
