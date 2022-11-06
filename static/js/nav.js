@@ -12,6 +12,7 @@ function menu(){
     const hamburger = document.getElementById('hamburger');
     const sidebar = document.getElementById('sidebar');
     const logo = document.getElementById('logo');
+    const bottomCoverText = document.getElementById('bottomCoverText');
 
 
     if (window.getComputedStyle(sidebar,null).getPropertyValue("opacity") == '0'){
@@ -25,6 +26,7 @@ function menu(){
         navbar.classList.add('active');
         logo.classList.add('active');
         hamburger.classList.remove('close-txt');
+        bottomCoverText.style.opacity = '0';
     }else{
         sidebar.classList.remove('active');
         setTimeout(() => {
@@ -36,6 +38,7 @@ function menu(){
         }, 300);
         navbar.classList.remove('active');
         logo.classList.remove('active');
+        bottomCoverText.style.opacity = 'unset';
     }
 }
 

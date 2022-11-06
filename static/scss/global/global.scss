@@ -27,10 +27,19 @@ $loader: rgb(80, 104, 180);
     max-height: 100vh;
     width: 100%;
   }
+  @media only screen and (min-device-width: 1450px) {
+    .width{
+      width: 100%;
+      max-width: 1850px !important;
+      height: 100%;
+      margin: auto;
+    }
+  }
   .width{
     width: 100%;
-    max-width: 1150px;
     height: 100%;
+    margin: auto;
+    max-width: 1330px;
   }
   // global text
 p{
@@ -136,6 +145,7 @@ button{
     justify-content: center;
     align-items: center;
     transition: all .5s ease-in;
+    display: none !important;
     .text{
       margin-block: 40px;
       text-align: center;

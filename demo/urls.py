@@ -8,9 +8,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     # Pages
-        # Projects
-    path('projects/webiser', project_webiser, name='project_webiser'),
-    path('projects/stellcare', project_stellcare, name='project_stellcare'),
-    path('projects/gglhmr', project_gglhmr, name='project_gglhmr'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

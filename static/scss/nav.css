@@ -193,24 +193,6 @@
 #mobileNav .sidebar .sidebar-ul li a:last-child:hover {
   background: rgba(55, 109, 150, 0.568627451);
 }
-#mobileNav .sidebar .sidebar-ul li a .top {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  color: #64FFDA;
-  font-size: 13px;
-  font-family: "Source Code Pro", monospace;
-  opacity: 0.6;
-}
-#mobileNav .sidebar .sidebar-ul li a .bottom {
-  position: absolute;
-  left: -15px;
-  bottom: -83px;
-  color: #64FFDA;
-  font-size: 13px;
-  font-family: "Source Code Pro", monospace;
-  opacity: 0.6;
-}
 #mobileNav .sidebar.active {
   opacity: 1;
   transition: 0.5s;
@@ -265,7 +247,38 @@
     text-decoration: none;
     padding-bottom: 6px;
     transition: 0.2s;
-    border-bottom: 2px solid transparent;
+    position: relative;
+  }
+  #desNav .menu a::before {
+    content: "";
+    display: block;
+    background: #64FFDA;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 0.2s;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  #desNav .menu a::after {
+    content: "";
+    display: block;
+    background: #64FFDA;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    transition: 0.2s;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  #desNav .menu a:hover::after, #desNav .menu a:hover::before {
+    width: 50%;
   }
   #desNav .menu a i {
     transform: translateX(0) translateY(2px);
@@ -284,13 +297,20 @@
     font-size: 15px;
     margin-right: -7px;
   }
+  #desNav .menu a:last-child::after, #desNav .menu a:last-child::before {
+    display: none;
+  }
   #desNav .menu a:last-child:hover {
     background: rgba(55, 109, 150, 0.568627451);
   }
-  #desNav .menu a:hover {
-    border-bottom: 2px solid #64FFDA;
+}
+@media only screen and (min-device-width: 1450px) {
+  #desNav {
+    padding-inline: 75px;
   }
-  #desNav .menu a:active {
-    border-bottom: 2px solid transparent;
+}
+@media only screen and (min-device-width: 1590px) {
+  #desNav {
+    padding-inline: 155px;
   }
 }/*# sourceMappingURL=nav.css.map */

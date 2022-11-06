@@ -25,10 +25,19 @@ html, body {
   width: 100%;
 }
 
+@media only screen and (min-device-width: 1450px) {
+  .width {
+    width: 100%;
+    max-width: 1850px !important;
+    height: 100%;
+    margin: auto;
+  }
+}
 .width {
   width: 100%;
-  max-width: 1150px;
   height: 100%;
+  margin: auto;
+  max-width: 1330px;
 }
 
 p.paragraph {
@@ -126,6 +135,7 @@ button.secondary:hover {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in;
+  display: none !important;
 }
 .load-wrapp .text {
   margin-block: 40px;
