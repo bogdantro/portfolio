@@ -37,16 +37,6 @@ if DEBUG == True:
     SESSION_COOKIE_AGE = 86400
     CRISPY_TEMPLATE_PACK = 'uni_form'
 
-    # Email
-    DEFAULT_FROM_EMAIL = 'sabertoothtri@gmail.com'
-    SERVER_EMAIL = 'sabertoothtri@gmail.com'
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_PORT = 587
-    EMAIL_HOST_USER = 'sabertoothtri@gmail.com'
-    EMAIL_HOST_PASSWORD = 'xhjtvvrgkncwvfmq'
-    EMAIL_USE_TLS = True
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
     # Application definition
 
     INSTALLED_APPS = [
@@ -160,6 +150,17 @@ if DEBUG == False:
     SECURE_SSL_REDIRECT = True
     SECURE_REFERRER_POLICY = 'strict-origin'
     SECURE_BROWSER_XSS_FILTER = True
+
+    # Email
+    DEFAULT_FROM_EMAIL = 'sabertoothtri@gmail.com'
+    SERVER_EMAIL = 'sabertoothtri@gmail.com'
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_PORT = 587
+    EMAIL_HOST_USER = 'sabertoothtri@gmail.com'
+    EMAIL_HOST_PASSWORD = 'xhjtvvrgkncwvfmq'
+    EMAIL_USE_TLS = True
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 
     SECRET_KEY = '^0m%8*x&=gfmz18m2^lo^$b&-7ojq4uj8dj%#!bb=1$hoe+@6o'
     
