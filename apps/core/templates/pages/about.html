@@ -2,5 +2,18 @@
 {% load static %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'scss/pages/page.css' %}">
+<link rel="stylesheet" href="{% static 'scss/pages/about.css' %}">
+<script src="{% static 'js/page.js' %}"></script>
 
+<div class="page">
+    <div class="intro" id="pageIntro"></div>
+    <div class="content">
+        <div class="back-to-prev" onclick="window.location.href='/'"><span></span><h1>Back home</h1></div>
+        <div class="about-me">
+            <h1 class="back-text">About me</h1>
+            
+        </div>
+    </div>
+</div>
 {% endblock %}

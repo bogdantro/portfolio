@@ -13,8 +13,15 @@ from django.db.models import *
 from django.contrib.auth.decorators import *
 
 
+# Home
 def home(request):
+    return render(request, 'core/home.html')
 
+    # Pages
+def about(request):
+    return render(request, 'pages/about.html')
+    
+def contact(request):
     if request.method=='POST' and 'contact' in request.POST:
         navn = request.POST.get('navn')
         email = request.POST.get('email')
@@ -32,11 +39,9 @@ def home(request):
 
         Beskjed: {}
         ''').format(data['email'], data['navn'], data['message'], )
-        send_mail('Webiser Contact Form', message, '', ['sabertoothtri@gmail.com'])
+        send_mail('Epost fra portfolio', message, '', ['sabertoothtri@gmail.com'])
         return redirect('/')
-
-    return render(request, 'core/home.html')
-
+    return render(request, 'pages/contact.html')  
 
     # Projects
 def project_webiser(request):

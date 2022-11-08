@@ -169,6 +169,15 @@
     color: #F9F6EE;
     margin-left: 15px;
   }
+  .cover .content .flower-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.279);
+  }
   .cover .content .text {
     text-align: left;
     width: -webkit-max-content;

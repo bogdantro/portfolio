@@ -81,7 +81,7 @@ button{
   font-size: 15px !important;
   border-radius: 4px !important;
   height: 51px !important;
-  width: 135px !important;
+  width: 145px !important;
   transition: .2s !important;
   &.primary{
     border: 2px solid #64FFDA !important;
@@ -145,7 +145,6 @@ button{
     justify-content: center;
     align-items: center;
     transition: all .5s ease-in;
-    display: none !important;
     .text{
       margin-block: 40px;
       text-align: center;
@@ -167,7 +166,7 @@ button{
     }
     &.hidden{
       opacity: 0;
-      top: 1110px;
+      top: -100%;
     }
     .load-wrapp p {
       padding: 0 0 20px;
