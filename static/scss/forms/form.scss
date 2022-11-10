@@ -1,34 +1,38 @@
 // standard phone
 .page-for-form{
-    padding-bottom: 20px;
+    padding-bottom: 0;
     transition: 1s;
     position: relative;
-    .back-to-prev{
-        cursor: pointer;
-        color: #183B56;
-        position: relative;
-        top: 40px;
-        left: 20px;
+    top: -80px;
+    height: 100%;
+    .contact-info-text{
+        display: none;
+    }
+    .bottom-cover{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        height: auto;
         display: flex;
         align-items: center;
-        height: 100%;
-        width: max-content;
-        opacity: 1;
-        h1{
-            font-size: 16px;
-            transform: translateY(3px);
+        justify-content: center;
+        padding: 10px 25px;
+        pointer-events: visible;
+        opacity: 0.8;
+        z-index: 1000000000;
+        .bottom-cover-text{
+            margin: 0;
+            transition: .2s;
+            .bottom-text{
+                margin: 0;
+                font-size: 12px;
+                span{
+                    border-bottom: 1px solid #64ffdb8c;
+                    padding-bottom: 5px;
+                }
+            }
         }
-        span{
-            margin-right: 20px;
-            display: block;
-            width: 60px;
-            height: 2px;
-            background: #183B56;
-            border-radius: 8px;
-        }
-    }
-    .contact-us-img{
-        display: none;
     }
     // form
     form{
@@ -36,9 +40,9 @@
         text-align: left;
         width: 100%;
         box-shadow: unset;
-        padding: 20px;
+        padding-inline: 35px;
         position: relative;
-        top: 60px;
+        top: 85px;
         // heading
         .heading{
             font-size: 25px;
@@ -49,51 +53,56 @@
         .inputs-labels{
             // label
             label{
-                color: #183b56;
+                color: #F9F6EE;
                 font-size: 15px;
                 opacity: 0.9;
+                margin-bottom: 15px;
+                display: none;
             }
             // input & textarea
             input, textarea{
-                border-radius: 4px;
                 padding: 5px;
                 padding-left: 8px;
                 border: none;
                 outline: none;
-                color: #183b56;
-                opacity: 0.9;
+                color: #F9F6EE;
+                opacity: 1;
                 font-size: 14px;
-                width: 82%;
+                width: 100%;
                 max-width: 500px;
                 height: 45px;
                 cursor: pointer;
                 background: transparent;
                 transition: .1s;
-                background: rgba(0,0,0,0.07);
+                border-bottom: 1px solid #64ffdbb0;
+                border-radius: 0;
                 &::placeholder{
-                    opacity: 0.4;
+                    opacity: 0.3;
+                    color: #F9F6EE;
                 }
                 &:hover{
+                    background: #306b97;
                 }
                 &:focus{
+                    background: transparent;
+                    border: 2px solid #64FFDA;
+                    border-radius: 4px;
                 }
             }
             // textarea
             textarea{
-                height: 100px;
-                min-height: 70px;
+                min-height: 100px;
                 max-height: 300px;
             }
         }
         // form actions
         .form-actions{
-            margin-top: 25px;
+            margin-top: 35px;
+            text-align: center;
             button{
-                border-color: transparent !important;
-                color: #183B56;
-                background: #00000010;
-                width: 180px !important;
+                width: 200px !important;
                 height: 56px !important;
+                opacity: 0.9;
             }
         }
     }
@@ -101,23 +110,32 @@
 
 
 @media only screen and (min-device-width: 1150px) {       
-    html, body {
-        background: radial-gradient(#2e6d9e, #215074, #183B56);
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-        margin: 0 auto;
-        height: 100vh;
-        max-height: 100vh;
-        width: 100%;
-    }
-    .contact-us-img{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 52%;
-        transform: translateY(-50%);
-        width: 490px;
-        height: auto;
-        box-shadow: 35px 5px 20px #a34ae277;
+    .page-for-form{
+        padding-inline: 35px;
+        form{
+            top: 120px;
+            padding-inline: 20px;
+            position: relative;
+            max-width: 1350px;
+            .contact-info-text{
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 500px;
+                height: max-content;
+                border-radius: 20px;
+                border-top-right-radius: 0;
+                border: 2px solid #F9F6EE;
+                padding: 25px 10px 100px 10px;
+                text-align: center;
+                h1{
+                    color: #F9F6EE;
+                    font-size: 30px;
+                    opacity: 0.9;
+                }
+            }
+        }
     }
 }

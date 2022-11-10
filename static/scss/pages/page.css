@@ -50,14 +50,14 @@
   opacity: 0.9;
 }
 .page .content .back-to-prev h1 {
-  font-size: 16px;
+  font-size: 15px;
   transform: translateY(3px);
 }
 .page .content .back-to-prev span {
   margin-right: 20px;
   display: block;
-  width: 60px;
-  height: 2px;
+  width: 65px;
+  height: 1.5px;
   background: #F9F6EE;
   border-radius: 8px;
 }/*# sourceMappingURL=page.css.map */
