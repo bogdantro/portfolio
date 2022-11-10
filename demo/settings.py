@@ -151,28 +151,7 @@ if DEBUG == False:
     SECURE_REFERRER_POLICY = 'strict-origin'
     SECURE_BROWSER_XSS_FILTER = True
 
-    # Email
-    DEFAULT_FROM_EMAIL = 'sabertoothtri@gmail.com'
-    SERVER_EMAIL = 'sabertoothtri@gmail.com'
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_PORT = 587
-    EMAIL_HOST_USER = 'sabertoothtri@gmail.com'
-    EMAIL_HOST_PASSWORD = 'xhjtvvrgkncwvfmq'
-    EMAIL_USE_TLS = True
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-
     SECRET_KEY = '^0m%8*x&=gfmz18m2^lo^$b&-7ojq4uj8dj%#!bb=1$hoe+@6o'
-
-     # Email
-    DEFAULT_FROM_EMAIL = 'sabertoothtri@gmail.com'
-    SERVER_EMAIL = 'sabertoothtri@gmail.com'
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_PORT = 587
-    EMAIL_HOST_USER = 'sabertoothtri@gmail.com'
-    EMAIL_HOST_PASSWORD = 'xhjtvvrgkncwvfmq'
-    EMAIL_USE_TLS = True
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     
     ALLOWED_HOSTS = ['www.bogdantrohanel.dev', 'bogdantrohanel.dev']
 
