@@ -4,6 +4,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  transition: 0.2s;
 }
 .cover .timeline {
   display: none;
@@ -12,6 +13,7 @@
   height: 100%;
   width: 100%;
   padding-inline: 36px;
+  transition: 0.2s;
 }
 .cover .content .cover-image {
   position: absolute;
