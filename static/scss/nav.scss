@@ -20,7 +20,7 @@
     .logo{
         z-index: 1000;
         position: relative;
-        left: -35px;
+        left: -37px;
         img{
             width: 110px;
             height: auto;
@@ -199,10 +199,12 @@
         justify-content: space-between;
         align-items: center;
         padding-inline: 35px;
+        max-width: 1850px !important;
+        margin: auto;
         .logo{
             z-index: 1000;
             position: relative;
-            left: -38px;
+            left: -33px;
             top: 3px;
             img{
                 cursor: pointer;

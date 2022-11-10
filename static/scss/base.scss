@@ -27,6 +27,7 @@
         .text{
             text-align: center;
             margin-top: 40px;
+            pointer-events: none !important;
             .headingp{
                 color: #64FFDA;
                 font-size: 14px;
@@ -79,6 +80,7 @@
                 margin-top: 25px;
                 width: 180px !important;
                 position: relative;
+                pointer-events: visible !important;
             }
         }
     }
@@ -112,9 +114,10 @@
 @media only screen and (min-device-width: 1150px) {
     .cover{
         height: 100vh !important;
+        width: 100% !important;
           .content{
             padding: 0;
-            width: 100%;
+            width: 100% !important;
             position: relative;
             display: flex;
             justify-content: space-between;

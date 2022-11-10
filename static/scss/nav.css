@@ -20,7 +20,7 @@
 #mobileNav .logo {
   z-index: 1000;
   position: relative;
-  left: -35px;
+  left: -37px;
 }
 #mobileNav .logo img {
   width: 110px;
@@ -215,11 +215,13 @@
     justify-content: space-between;
     align-items: center;
     padding-inline: 35px;
+    max-width: 1850px !important;
+    margin: auto;
   }
   #desNav .logo {
     z-index: 1000;
     position: relative;
-    left: -38px;
+    left: -33px;
     top: 3px;
   }
   #desNav .logo img {
