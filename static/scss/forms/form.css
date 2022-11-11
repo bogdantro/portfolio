@@ -115,7 +115,7 @@
     width: auto;
     padding: 0;
     position: relative;
-    top: -70pz;
+    top: 0;
   }
   .page-for-form .bottom-cover {
     display: none;
@@ -131,7 +131,7 @@
     height: max-content;
     position: absolute;
     right: -154px;
-    bottom: 95px;
+    bottom: 45px;
     transform: rotate(-90deg);
     opacity: 0.8;
     overflow: hidden;
@@ -164,7 +164,7 @@
     height: max-content;
     position: absolute;
     left: -180px;
-    bottom: 95px;
+    bottom: 45px;
     transform: rotate(-90deg);
     opacity: 0.7;
     z-index: 10000;
@@ -189,14 +189,14 @@
     transform: scale(1.1) rotate(90deg);
   }
   .page-for-form form {
-    top: 0;
-    position: unset;
+    position: relative;
+    top: 5px;
     text-align: center;
     width: auto;
     padding: 0;
   }
   .page-for-form form .inputs-labels textarea {
-    min-height: 150px;
+    min-height: 90px;
     max-height: 350px;
   }
   .page-for-form form .form-actions button:hover {
