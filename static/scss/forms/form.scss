@@ -117,7 +117,7 @@
         width: auto;
         padding: 0;
         position: relative;
-        top: 0;
+        top: -70pz;
         .bottom-cover{
             display: none;
         }
@@ -128,7 +128,7 @@
             height: max-content;
             position: absolute;
             right: -154px;
-            bottom: 70px;
+            bottom: 95px;
             transform: rotate(-90deg);
             opacity: 0.8;
             overflow: hidden;
@@ -156,8 +156,8 @@
             width: max-content;
             height: max-content;
             position: absolute;
-            left: -175px;
-            bottom: 70px;
+            left: -180px;
+            bottom: 95px;
             transform: rotate(-90deg);
             opacity: 0.7;
             z-index: 10000;
