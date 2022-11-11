@@ -33,7 +33,6 @@ if DEBUG == True:
     
     ALLOWED_HOSTS = []
 
-
     SESSION_COOKIE_AGE = 86400
     CRISPY_TEMPLATE_PACK = 'uni_form'
 
@@ -47,6 +46,7 @@ if DEBUG == True:
         'django.contrib.messages',
         'django.contrib.staticfiles',
         'apps.core',
+        'captcha',
     ]
 
     MIDDLEWARE = [
@@ -151,6 +151,10 @@ if DEBUG == False:
     SECURE_REFERRER_POLICY = 'strict-origin'
     SECURE_BROWSER_XSS_FILTER = True
 
+    RECAPTCHA_PUBLIC_KEY = '6LfpNvwiAAAAAKAHifDYxlU0RYhN7SMQEPRulCvf'
+    RECAPTCHA_PRIVATE_KEY = '6LfpNvwiAAAAANrQOZhIKCoLr8S91KXCtMfZfzoQ'
+    SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
+
     SECRET_KEY = '^0m%8*x&=gfmz18m2^lo^$b&-7ojq4uj8dj%#!bb=1$hoe+@6o'
     
     ALLOWED_HOSTS = ['www.bogdantrohanel.dev', 'bogdantrohanel.dev']
@@ -169,6 +173,7 @@ if DEBUG == False:
         'django.contrib.messages',
         'django.contrib.staticfiles',
         'apps.core',
+        'captcha',
     ]
 
     MIDDLEWARE = [

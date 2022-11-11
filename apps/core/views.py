@@ -11,6 +11,8 @@ from textwrap import *
 from django.views.decorators.csrf import *
 from django.db.models import * 
 from django.contrib.auth.decorators import *
+from captcha.fields import ReCaptchaField
+from captcha.widgets import ReCaptchaV2Checkbox
 
 
 # Home
@@ -26,6 +28,8 @@ def contact(request):
         navn = request.POST.get('navn')
         email = request.POST.get('email')
         message = request.POST.get('message')
+
+        captcha = ReCaptchaField(widget=ReCaptchaV2Checkbox())
 
         data = {
             'navn': navn,
