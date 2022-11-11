@@ -2,8 +2,8 @@
   padding-bottom: 0;
   transition: 1s;
   position: relative;
-  top: -80px;
-  height: 100%;
+  top: 0;
+  height: 100vh;
   width: 100%;
 }
 .page-for-form .contact-info-text {
@@ -48,7 +48,7 @@
   box-shadow: unset;
   padding-inline: 35px;
   position: relative;
-  top: 85px;
+  top: 70px;
 }
 .page-for-form form .inputs-labels label {
   color: #F9F6EE;
