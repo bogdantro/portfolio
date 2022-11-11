@@ -2,9 +2,7 @@
 .page-for-form{
     padding-bottom: 0;
     transition: 1s;
-    position: relative;
     top: 0;
-    height: 100vh;
     width: 100%;
     .contact-info-text{
         display: none;
@@ -49,7 +47,7 @@
         box-shadow: unset;
         padding-inline: 35px;
         position: relative;
-        top: 70px;
+        top: 0;
         // inputs and labels
         .inputs-labels{
             // label

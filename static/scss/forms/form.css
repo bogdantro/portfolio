@@ -1,9 +1,7 @@
 .page-for-form {
   padding-bottom: 0;
   transition: 1s;
-  position: relative;
   top: 0;
-  height: 100vh;
   width: 100%;
 }
 .page-for-form .contact-info-text {
@@ -48,7 +46,7 @@
   box-shadow: unset;
   padding-inline: 35px;
   position: relative;
-  top: 70px;
+  top: 0;
 }
 .page-for-form form .inputs-labels label {
   color: #F9F6EE;

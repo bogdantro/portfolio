@@ -17,7 +17,6 @@
 html, body {
   background: #215074 !important;
   overflow-x: hidden !important;
-  overflow-y: hidden !important;
   scroll-behavior: smooth !important;
   margin: 0 auto !important;
   height: 100vh !important;
