@@ -17,6 +17,7 @@
 html, body {
   background: #215074 !important;
   overflow-x: hidden !important;
+  overflow-y: hidden !important;
   scroll-behavior: smooth !important;
   margin: 0 auto !important;
   height: 100vh !important;
@@ -101,6 +102,7 @@ button.secondary:hover {
   html, body {
     background: radial-gradient(#2e6d9e, #215074, #183B56) !important;
     overflow-x: hidden !important;
+    overflow-y: hidden !important;
     scroll-behavior: smooth !important;
     margin: 0 auto !important;
     height: 100vh !important;

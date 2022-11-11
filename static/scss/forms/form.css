@@ -69,7 +69,7 @@
   cursor: pointer;
   background: transparent;
   transition: 0.1s;
-  border-bottom: 1px solid rgba(100, 255, 219, 0.6901960784);
+  border-bottom: 1px solid #64ffdb;
   border-radius: 0;
 }
 .page-for-form form .inputs-labels input::-moz-placeholder, .page-for-form form .inputs-labels textarea::-moz-placeholder {
@@ -104,7 +104,7 @@
 .page-for-form form .form-actions button {
   width: 200px !important;
   height: 56px !important;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 @media only screen and (min-device-width: 1150px) {
@@ -113,9 +113,9 @@
   }
   .page-for-form {
     width: auto;
-    height: 100vh;
-    position: relative;
     padding: 0;
+    position: relative;
+    top: 0;
   }
   .page-for-form .bottom-cover {
     display: none;
@@ -130,8 +130,8 @@
     height: -moz-max-content;
     height: max-content;
     position: absolute;
-    right: -157px;
-    bottom: 190px;
+    right: -154px;
+    bottom: 70px;
     transform: rotate(-90deg);
     opacity: 0.8;
     overflow: hidden;
@@ -163,8 +163,8 @@
     height: -moz-max-content;
     height: max-content;
     position: absolute;
-    left: -157px;
-    bottom: 190px;
+    left: -175px;
+    bottom: 70px;
     transform: rotate(-90deg);
     opacity: 0.7;
     z-index: 10000;
@@ -189,11 +189,10 @@
     transform: scale(1.1) rotate(90deg);
   }
   .page-for-form form {
-    top: 120px;
-    position: relative;
+    top: 0;
+    position: unset;
     text-align: center;
     width: auto;
-    max-height: 100vh;
     padding: 0;
   }
   .page-for-form form .inputs-labels textarea {
