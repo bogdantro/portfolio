@@ -4,6 +4,7 @@
     width: 100%;
     .des-img{
         display: none;
+        pointer-events: none;
     }
     .mob-img{
         position: absolute;
@@ -18,6 +19,9 @@
         margin-top: 40px;
         li{
             opacity: 0 !important;
+        }
+        .keywords{
+            display: none;
         }
         .small-paragraph{
             margin-top: 21px;      
@@ -119,6 +123,7 @@
                 position: absolute;
                 right: -30px;
                 top: 122px;
+                display: unset;
             }
             .socials{
                 display: flex;
@@ -164,6 +169,11 @@
         }
         .text{
             margin-right: 115px;
+            .keywords{
+                position: absolute;
+                right: 80px;
+                top: 145px;
+            }
         }
     }
 }
@@ -171,10 +181,15 @@
 @media only screen and (min-device-width: 1590px) {
     .about-me{
         .des-img{
-            margin-left: 145px;
+            margin-left: 115px;
         }
         .text{
-            margin-right: 145px;
+            margin-right: 115px;
+            .keywords{
+                position: absolute;
+                right: 170px;
+                top: 185px;
+            }
         }
     }
 }
@@ -182,10 +197,15 @@
 @media only screen and (min-device-width: 1690px) {
     .about-me{
         .des-img{
-            margin-left: 175px;
+            margin-left: 145px;
         }
         .text{
-            margin-right: 175px;
+            margin-right: 145px;
+            .keywords{
+                position: absolute;
+                right: 215px;
+                top: 205px;
+            }
         }
     }
 }

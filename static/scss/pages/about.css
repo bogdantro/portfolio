@@ -4,6 +4,7 @@
 }
 .about-me .des-img {
   display: none;
+  pointer-events: none;
 }
 .about-me .mob-img {
   position: absolute;
@@ -19,6 +20,9 @@
 }
 .about-me .text li {
   opacity: 0 !important;
+}
+.about-me .text .keywords {
+  display: none;
 }
 .about-me .text .small-paragraph {
   margin-top: 21px;
@@ -118,6 +122,7 @@
     position: absolute;
     right: -30px;
     top: 122px;
+    display: unset;
   }
   .about-me .text .socials {
     display: flex;
@@ -164,20 +169,35 @@
   .about-me .text {
     margin-right: 115px;
   }
+  .about-me .text .keywords {
+    position: absolute;
+    right: 80px;
+    top: 145px;
+  }
 }
 @media only screen and (min-device-width: 1590px) {
+  .about-me .des-img {
+    margin-left: 115px;
+  }
+  .about-me .text {
+    margin-right: 115px;
+  }
+  .about-me .text .keywords {
+    position: absolute;
+    right: 170px;
+    top: 185px;
+  }
+}
+@media only screen and (min-device-width: 1690px) {
   .about-me .des-img {
     margin-left: 145px;
   }
   .about-me .text {
     margin-right: 145px;
   }
-}
-@media only screen and (min-device-width: 1690px) {
-  .about-me .des-img {
-    margin-left: 175px;
-  }
-  .about-me .text {
-    margin-right: 175px;
+  .about-me .text .keywords {
+    position: absolute;
+    right: 215px;
+    top: 205px;
   }
 }/*# sourceMappingURL=about.css.map */
