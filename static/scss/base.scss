@@ -39,7 +39,7 @@
                 opacity: 0.9;
             }
             .small-paragraph{
-                margin-top: 21px;      
+                margin-top: 25px;      
                 padding-left: 2px;   
                 font-size: 16px;       
             }
@@ -51,6 +51,7 @@
                 &.opacity{
                     opacity: 0.6;
                     font-size: 35px;
+                    margin-top: 10px;
                     &.mob{
                         display: block;
                     }
@@ -60,7 +61,7 @@
                 }
             }
             .icons{
-                margin-top: 20px;
+                margin-top: 30px;
                 i{
                     margin-inline: 9px;
                     padding: 4px;
@@ -79,7 +80,7 @@
             }
             button{
                 opacity: 0.8;
-                margin-top: 25px;
+                margin-top: 30px;
                 width: 180px !important;
                 position: relative;
                 pointer-events: visible !important;

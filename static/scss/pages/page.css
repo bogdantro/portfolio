@@ -16,7 +16,6 @@
 }
 
 .page {
-  min-height: 88vh;
   width: 100%;
 }
 .page .intro {
@@ -37,29 +36,30 @@
 }
 .page .content {
   padding-inline: 20px;
-  padding-top: 40px;
+  padding-top: 0;
 }
-.page .content .back-to-prev {
-  cursor: pointer;
-  color: #F9F6EE;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  opacity: 0.9;
+
+@media only screen and (min-device-width: 1150px) {
+  .page .content {
+    padding-inline: 35px;
+    padding-top: 30px;
+  }
 }
-.page .content .back-to-prev h1 {
-  font-size: 15px;
-  transform: translateY(3px);
+@media only screen and (min-device-width: 1450px) {
+  .page .content {
+    padding-inline: 35px;
+    padding-top: 50px;
+  }
 }
-.page .content .back-to-prev span {
-  margin-right: 20px;
-  display: block;
-  width: 65px;
-  height: 1.5px;
-  background: #F9F6EE;
-  border-radius: 8px;
+@media only screen and (min-device-width: 1590px) {
+  .page .content {
+    padding-inline: 35px;
+    padding-top: 60px;
+  }
+}
+@media only screen and (min-device-width: 1690px) {
+  .page .content {
+    padding-inline: 35px;
+    padding-top: 80px;
+  }
 }/*# sourceMappingURL=page.css.map */

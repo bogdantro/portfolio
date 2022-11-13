@@ -2,17 +2,176 @@
 
 .about-me{
     width: 100%;
-    height: 100%;
-    .back-text{
-        font-size: 170px;
+    .des-img{
+        display: none;
+    }
+    .mob-img{
         position: absolute;
-        left: -100px;
-        top: 130px;
-        color: #F9F6EE;
-        white-space: nowrap;
-        overflow: hidden;
-        opacity: 0.05;
-        font-family: 'Lobster Two', cursive;
-        transform: rotate(-30deg);
+        bottom: 30px;
+        left: 35px;
+        opacity: 0.15;
+        width: 170px;
+        height: auto;
+    }
+    .text{
+        text-align: center;
+        margin-top: 40px;
+        .small-paragraph{
+            margin-top: 21px;      
+            padding-left: 2px;   
+            font-size: 16px;       
+            &.des{
+                display: none;
+            }
+        }
+        h1{
+            color: #f9f6eede;
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 9px;
+        }
+        .socials{
+            display: none;
+        }
+    }
+    .bottom-cover{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 25px;
+        pointer-events: visible;
+        opacity: 0.8;
+        z-index: 1000000000;
+        .bottom-cover-text{
+            margin: 0;
+            transition: .2s;
+            .bottom-text{
+                margin: 0;
+                font-size: 12px;
+                span{
+                    border-bottom: 1px solid #64ffdb8c;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1150px) {
+    .about-me{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        .mob-img{
+            display: none;
+        }
+        .des-img{
+            display: block;
+            opacity: 0.9;
+            position: relative;
+            transform: translateY(35px);
+            margin-left: 65px;
+        }
+        .text{
+            text-align: left;
+            margin-top: 40px;
+            width: auto;
+            margin-right: 65px;
+            h1{
+                color: #f9f6eede;
+                font-size: 60px;
+                margin-top: 0;
+                margin-bottom: 12px;
+            }
+            .small-paragraph{
+                margin-top: 30px !important;      
+                padding-left: 2px;   
+                font-size: 16px; 
+                width: 500px;
+                &.mob{
+                    display: none;
+                }
+                &.des{
+                    display: block;
+                }
+                a{
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .socials{
+                display: flex;
+                align-items: center;
+                width: max-content;
+                height: max-content;
+                position: relative;
+                left: 0;
+                top: 50px;
+                opacity: 0.7;
+                z-index: 10000;
+                span{
+                    background: linear-gradient(to right, transparent, #64FFDA);
+                    width: 300px;
+                    height: 2px;
+                    border-radius: 20px;
+                    margin-right: 15px;
+                }
+                i{
+                    color: #64FFDA;
+                    cursor: pointer;
+                    font-size: 21px;
+                    padding: 5px;
+                    margin: -5px;
+                    margin-inline: 15px;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .bottom-cover{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1450px) {
+    .about-me{
+        .des-img{
+            transform: translateY(40px);
+            margin-left: 115px;
+        }
+        .text{
+            margin-right: 115px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1590px) {
+    .about-me{
+        .des-img{
+            margin-left: 145px;
+        }
+        .text{
+            margin-right: 145px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1690px) {
+    .about-me{
+        .des-img{
+            margin-left: 175px;
+        }
+        .text{
+            margin-right: 175px;
+        }
     }
 }
