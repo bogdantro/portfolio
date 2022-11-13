@@ -17,12 +17,18 @@
   text-align: center;
   margin-top: 40px;
 }
+.about-me .text li {
+  opacity: 0 !important;
+}
 .about-me .text .small-paragraph {
   margin-top: 21px;
   padding-left: 2px;
   font-size: 16px;
 }
 .about-me .text .small-paragraph.des {
+  display: none;
+}
+.about-me .text .small-paragraph.des li {
   display: none;
 }
 .about-me .text h1 {
@@ -84,9 +90,12 @@
     width: auto;
     margin-right: 65px;
   }
+  .about-me .text li {
+    opacity: 0.8 !important;
+  }
   .about-me .text h1 {
     color: rgba(249, 246, 238, 0.8705882353);
-    font-size: 60px;
+    font-size: 52px;
     margin-top: 0;
     margin-bottom: 12px;
   }

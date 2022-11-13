@@ -42,13 +42,13 @@
 @media only screen and (min-device-width: 1150px) {
   .page .content {
     padding-inline: 35px;
-    padding-top: 30px;
+    padding-top: -10px;
   }
 }
 @media only screen and (min-device-width: 1450px) {
   .page .content {
     padding-inline: 35px;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 }
 @media only screen and (min-device-width: 1590px) {

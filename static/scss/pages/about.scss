@@ -16,12 +16,18 @@
     .text{
         text-align: center;
         margin-top: 40px;
+        li{
+            opacity: 0 !important;
+        }
         .small-paragraph{
             margin-top: 21px;      
             padding-left: 2px;   
             font-size: 16px;       
             &.des{
                 display: none;
+                li{
+                    display: none;
+                }
             }
         }
         h1{
@@ -83,9 +89,12 @@
             margin-top: 40px;
             width: auto;
             margin-right: 65px;
+            li{
+                opacity: 0.8 !important;
+            }
             h1{
                 color: #f9f6eede;
-                font-size: 60px;
+                font-size: 52px;
                 margin-top: 0;
                 margin-bottom: 12px;
             }
