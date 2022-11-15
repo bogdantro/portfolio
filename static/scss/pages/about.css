@@ -1,50 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
-.about-me {
+.about-me-des {
+  display: none;
+}
+
+.about-me-mob {
   width: 100%;
 }
-.about-me .des-img {
-  display: none;
-  pointer-events: none;
-}
-.about-me .mob-img {
+.about-me-mob .mob-img {
   position: absolute;
   bottom: 30px;
   left: 35px;
-  opacity: 0.15;
+  opacity: 0.1;
   width: 170px;
   height: auto;
 }
-.about-me .text {
+.about-me-mob .text {
   text-align: center;
   margin-top: 40px;
 }
-.about-me .text li {
-  opacity: 0 !important;
-}
-.about-me .text .keywords {
-  display: none;
-}
-.about-me .text .small-paragraph {
-  margin-top: 21px;
-  padding-left: 2px;
-  font-size: 16px;
-}
-.about-me .text .small-paragraph.des {
-  display: none;
-}
-.about-me .text .small-paragraph.des li {
-  display: none;
-}
-.about-me .text h1 {
-  color: rgba(249, 246, 238, 0.8705882353);
-  font-size: 36px;
+.about-me-mob .text .headingp {
+  color: #64FFDA;
+  font-size: 14px;
+  letter-spacing: 1px;
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 15px;
+  opacity: 0.9;
 }
-.about-me .text .socials {
-  display: none;
+.about-me-mob .cards {
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
 }
-.about-me .bottom-cover {
+.about-me-mob .cards .opener {
+  font-size: 17px;
+  color: #F9F6EE;
+  opacity: 0.9;
+  background: #2b5e85;
+  padding: 10px;
+  border-radius: 4px;
+  margin-block: 22px;
+}
+.about-me-mob .cards .opener:first-child {
+  margin-top: 0;
+}
+.about-me-mob .cards .card {
+  background: #215074;
+  border: none;
+  z-index: 10000;
+  transition: 2s;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.about-me-mob .cards .card h1 {
+  font-size: 20px;
+  color: #F9F6EE;
+  opacity: 0.9;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+.about-me-mob .cards .card .arrow {
+  position: absolute;
+  right: 5px;
+  top: 43px;
+  color: #F9F6EE;
+  opacity: 0.9;
+  font-size: 22px;
+  padding: 8px;
+  margin: -8px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.about-me-mob .cards .card .arrow.active {
+  right: 25px;
+  opacity: 1;
+}
+.about-me-mob .cards .card.active {
+  transition: 0.5s;
+  opacity: 1;
+  right: 0;
+  pointer-events: visible;
+}
+.about-me-mob .bottom-cover {
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -58,73 +99,76 @@
   opacity: 0.8;
   z-index: 1000000000;
 }
-.about-me .bottom-cover .bottom-cover-text {
+.about-me-mob .bottom-cover .bottom-cover-text {
   margin: 0;
   transition: 0.2s;
 }
-.about-me .bottom-cover .bottom-cover-text .bottom-text {
+.about-me-mob .bottom-cover .bottom-cover-text .bottom-text {
   margin: 0;
   font-size: 12px;
 }
-.about-me .bottom-cover .bottom-cover-text .bottom-text span {
+.about-me-mob .bottom-cover .bottom-cover-text .bottom-text span {
   border-bottom: 1px solid rgba(100, 255, 219, 0.5490196078);
   padding-bottom: 5px;
 }
 
 @media only screen and (min-device-width: 1150px) {
-  .about-me {
+  .about-me-mob {
+    display: none;
+  }
+  .about-me-des {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
   }
-  .about-me .mob-img {
+  .about-me-des .mob-img {
     display: none;
   }
-  .about-me .des-img {
+  .about-me-des .des-img {
     display: block;
     opacity: 0;
     position: relative;
     transform: translateY(15px);
     margin-left: 65px;
   }
-  .about-me .text {
+  .about-me-des .text {
     text-align: left;
     margin-top: 40px;
     width: auto;
     margin-right: 65px;
   }
-  .about-me .text li {
+  .about-me-des .text li {
     opacity: 0.8 !important;
   }
-  .about-me .text h1 {
+  .about-me-des .text h1 {
     color: rgba(249, 246, 238, 0.8705882353);
     font-size: 45px;
     margin-top: 0;
     margin-bottom: 10px;
   }
-  .about-me .text .small-paragraph {
+  .about-me-des .text .small-paragraph {
     margin-top: 25px !important;
     padding-left: 2px;
     font-size: 16px;
     width: 470px;
   }
-  .about-me .text .small-paragraph.mob {
+  .about-me-des .text .small-paragraph.mob {
     display: none;
   }
-  .about-me .text .small-paragraph.des {
+  .about-me-des .text .small-paragraph.des {
     display: block;
   }
-  .about-me .text .small-paragraph a:hover {
+  .about-me-des .text .small-paragraph a:hover {
     font-weight: bold;
   }
-  .about-me .text .keywords {
+  .about-me-des .text .keywords {
     position: absolute;
     right: -30px;
     top: 122px;
     display: unset;
   }
-  .about-me .text .socials {
+  .about-me-des .text .socials {
     display: flex;
     align-items: center;
     width: -webkit-max-content;
@@ -139,14 +183,14 @@
     opacity: 0.7;
     z-index: 10000;
   }
-  .about-me .text .socials span {
+  .about-me-des .text .socials span {
     background: linear-gradient(to right, transparent, #64FFDA);
     width: 300px;
     height: 2px;
     border-radius: 20px;
     margin-right: 15px;
   }
-  .about-me .text .socials i {
+  .about-me-des .text .socials i {
     color: #64FFDA;
     cursor: pointer;
     font-size: 21px;
@@ -154,10 +198,10 @@
     margin: -5px;
     margin-inline: 15px;
   }
-  .about-me .text .socials i:hover {
+  .about-me-des .text .socials i:hover {
     transform: scale(1.1);
   }
-  .about-me .bottom-cover {
+  .about-me-des .bottom-cover {
     display: none;
   }
 }

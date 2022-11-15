@@ -10,6 +10,7 @@ urlpatterns = [
     # Pages
     path('about-me', about, name='about'),
     path('get-in-touch', contact, name='contact'),
+    path('what-i-do', skills, name='skills'),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

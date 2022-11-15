@@ -5,12 +5,34 @@
 <link rel="stylesheet" href="{% static 'scss/pages/page.css' %}">
 <link rel="stylesheet" href="{% static 'scss/pages/about.css' %}">
 <script src="{% static 'js/page.js' %}"></script>
+<script src="{% static 'js/about.js' %}"></script>
 
 <div class="page">
-    <div class="intro" id="pageIntro"></div>
+    <!-- <div class="intro" id="pageIntro"></div> -->
     <div class="content">
-        <div class="about-me">
+        <div class="about-me-mob">
             <img src="{% static 'images/covers/about.png' %}" class="mob-img" alt="">
+            <div class="text">
+                <p class="headingp">A page only about me!</p>
+                <!-- <h1>About me</h1> -->
+            </div>
+            <div class="cards">
+                <h1 class="opener" onclick="myGoal()">My goal</h1>
+                <h1 class="opener">Some text about me</h1>
+                <h1 class="opener">What I do</h1>
+                <h1 class="opener">Info about my cat</h1>
+                <div class="card" id="myGoalCard">
+                    <h1>My goal</h1>
+                    <i class="fa-solid fa-arrow-right arrow" id="arrowBackCard" onclick="myGoalClose()"></i>
+                </div>
+            </div>
+            <div class="bottom-cover">
+                <div class="bottom-cover-text" id="bottomCoverText">
+                  <p class="small-paragraph bottom-text">The simpler, <span>the better.</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="about-me-des">
             <div class="text">
                 <h1>About me</h1>
                 <p class="small-paragraph mob">Whenever I don't develop websites, I mostly workout and play footbal, but when I do develop websites, I tend to use <a style="color: unset; text-decoration: underline;" href="https://www.djangoproject.com/">Django</a> as my framework. My code is clean, easy to understand and nicely structured<br><br>I got around 3 years of experience as a web developer, but because of my age, I haven't had time to get a job yet, but I am in the looks for one now! Got any questions? <a style="color: unset; text-decoration: underline;" href="/get-in-touch">Ask me anything!</a></p>

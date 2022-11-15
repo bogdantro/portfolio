@@ -22,6 +22,9 @@ def home(request):
     # Pages
 def about(request):
     return render(request, 'pages/about.html')
+
+def skills(request):
+    return render(request, 'pages/skills.html')
     
 def contact(request):
     if request.method=='POST' and 'contact' in request.POST:
