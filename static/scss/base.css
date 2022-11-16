@@ -20,6 +20,7 @@
   top: 180px;
   left: 15px;
   opacity: 0.25;
+  pointer-events: none;
 }
 .cover .content .cover-image img {
   width: 170px;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
+
 .about-me-des{
     display: none;
 }
@@ -36,7 +37,7 @@
             background: #2b5e85;
             padding: 10px;
             border-radius: 4px;
-            margin-block: 22px;
+            margin-block: 28px;
             &:first-child{
                 margin-top: 0;
             }
@@ -45,7 +46,7 @@
             background: #215074;
             border: none;
             z-index: 10000;
-            transition: 2s;
+            transition: .9s;
             position: absolute;
             right: -100%;
             top: 0;
@@ -58,7 +59,6 @@
                 color: #F9F6EE;
                 opacity: 0.9;
                 margin-top: 40px;
-                margin-right: 10px;
             }
             .arrow{
                 position: absolute;
@@ -72,9 +72,42 @@
                 opacity: 0;
                 transition: .5s;
                 &.active{
-                    right: 25px;
+                    right: 35px;
                     opacity: 1;
                 }
+            }
+            .card-card{
+                width: 85%;
+                height: max-content;
+                padding: 20px;
+                background: #2b5e85;
+                margin: 0 auto;
+                position: relative;
+                top: 40px;
+                .text{
+                    margin: 0;
+                    text-align: center;
+                    h1, p{
+                        margin: 0;
+                    }
+                    h1{
+                        font-size: 18px;
+                    }
+                    p{
+                        margin-top: 6px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .y-line{
+                display: block;
+                position: relative;
+                top: 50px;
+                background: rgba(255,255,255,0.15);
+                width: 2px;
+                height: 40px;
+                margin: 0 auto;
+                border-radius: 20px;
             }
             &.active{
                 transition: .5s;
@@ -129,6 +162,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+        opacity: 0;
         .mob-img{
             display: none;
         }
