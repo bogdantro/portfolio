@@ -97,6 +97,7 @@
 }
 .about-me-mob .cards .card .card-card .text h1 {
   font-size: 18px;
+  color: #F9F6EE;
 }
 .about-me-mob .cards .card .card-card .text p {
   margin-top: 6px;
@@ -161,6 +162,13 @@
 }
 .about-me-mob .cards .card .skills .skill.html {
   margin-top: 20px;
+}
+.about-me-mob .cards .card#infoAbtCatCard img {
+  margin-inline: auto;
+  width: 100px;
+  height: auto;
+  position: relative;
+  top: 100px;
 }
 .about-me-mob .cards .card.active {
   transition: 0.5s;

@@ -63,3 +63,49 @@ function whatIDoClose(){
 
     arrowBackCard.classList.remove('active');
 }
+
+function infoAbtCat(){
+    const infoAbtCat = document.getElementById('infoAbtCatCard')
+    const arrowBackCard = document.getElementById('arrowBackCard4')
+
+    infoAbtCat.classList.add('active');
+
+    setTimeout(() => {
+        arrowBackCard.classList.add('active');
+    }, 350);
+}
+
+function infoAbtCatClose(){
+    const infoAbtCat = document.getElementById('infoAbtCatCard')
+    const arrowBackCard = document.getElementById('arrowBackCard4')
+
+    infoAbtCat.classList.remove('active');
+
+    arrowBackCard.classList.remove('active');
+}
+
+function howIMadeWeb(){
+    const howIMadeWeb = document.getElementById('howIMadeWebCard')
+    const arrowBackCard = document.getElementById('arrowBackCard5')
+    const bottomCover =  document.getElementById('bottomCover')
+
+    howIMadeWeb.classList.add('active');
+
+    bottomCover.style.display = 'none';
+
+    setTimeout(() => {
+        arrowBackCard.classList.add('active');
+    }, 350);
+}
+
+function howIMadeWebClose(){
+    const howIMadeWeb = document.getElementById('howIMadeWebCard')
+    const arrowBackCard = document.getElementById('arrowBackCard5')
+    const bottomCover =  document.getElementById('bottomCover')
+
+    howIMadeWeb.classList.remove('active');
+
+    bottomCover.style.display = 'unset';
+
+    arrowBackCard.classList.remove('active');
+}

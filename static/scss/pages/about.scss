@@ -91,6 +91,7 @@
                     }
                     h1{
                         font-size: 18px;
+                        color: #F9F6EE;
                     }
                     p{
                         margin-top: 6px;
@@ -155,6 +156,16 @@
                     &.html{
                         margin-top: 20px;
                     }
+                }
+            }
+            // Info about my cat
+            &#infoAbtCatCard{
+                img{
+                    margin-inline: auto;
+                    width: 100px;
+                    height: auto;
+                    position: relative;
+                    top: 100px;
                 }
             }
             &.active{
