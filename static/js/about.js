@@ -59,7 +59,7 @@ function whatIDoClose(){
 
     whatIDo.classList.remove('active');
 
-    bottomCover.style.display = 'unset';
+    bottomCover.style.display = 'flex';
 
     arrowBackCard.classList.remove('active');
 }
@@ -105,7 +105,7 @@ function howIMadeWebClose(){
 
     howIMadeWeb.classList.remove('active');
 
-    bottomCover.style.display = 'unset';
+    bottomCover.style.display = 'flex';
 
     arrowBackCard.classList.remove('active');
 }
