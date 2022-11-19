@@ -56,10 +56,9 @@
   height: 100%;
   pointer-events: none;
 }
-.about-me-mob .cards .card h1 {
+.about-me-mob .cards .card .card-heading {
   font-size: 20px;
   color: #F9F6EE;
-  opacity: 0.9;
   margin-top: 40px;
 }
 .about-me-mob .cards .card .arrow {
@@ -112,6 +111,56 @@
   height: 40px;
   margin: 0 auto;
   border-radius: 20px;
+}
+.about-me-mob .cards .card .headingp {
+  color: #64FFDA;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 0 !important;
+  opacity: 0.9;
+  padding-bottom: 10px;
+}
+.about-me-mob .cards .card .skills {
+  height: auto;
+  width: 85%;
+  margin-inline: auto;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.about-me-mob .cards .card .skills::-webkit-scrollbar {
+  display: none;
+}
+.about-me-mob .cards .card .skills .skill {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+  border-radius: 4px;
+  background: #2b5e85;
+}
+.about-me-mob .cards .card .skills .skill .icon {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.about-me-mob .cards .card .skills .skill .icon i {
+  color: #F9F6EE;
+  font-size: 40px;
+}
+.about-me-mob .cards .card .skills .skill .skill-text {
+  text-align: left;
+  width: 75%;
+}
+.about-me-mob .cards .card .skills .skill .skill-text h1 {
+  color: #F9F6EE;
+  font-size: 20px;
+}
+.about-me-mob .cards .card .skills .skill.html {
+  margin-top: 20px;
 }
 .about-me-mob .cards .card.active {
   transition: 0.5s;

@@ -19,12 +19,12 @@
             <div class="cards">
                 <h1 class="opener" onclick="myGoal()">My goal</h1>
                 <h1 class="opener" onclick="infoAbtMe()">Some text about me</h1>
-                <h1 class="opener">What I do</h1>
+                <h1 class="opener" onclick="whatIDo()">What I do</h1>
                 <h1 class="opener">Info about my cat</h1>
                 <h1 class="opener">How I made this website</h1>
                 <!-- My goal -->
                 <div class="card" id="myGoalCard">
-                    <h1>My goal</h1>
+                    <h1 class="card-heading">My goal</h1>
                     <i class="fa-solid fa-arrow-right arrow" id="arrowBackCard1" onclick="myGoalClose()"></i>
                     <div class="card-card">
                         <div class="text">
@@ -42,12 +42,69 @@
                 </div>
                 <!-- Some text about me -->
                 <div class="card" id="infoAbtMeCard">
-                    <h1 style="margin-right: 20px;">Some text about me</h1>
+                    <h1 class="card-heading" style="margin-right: 10px;">Some text about me</h1>
                     <i class="fa-solid fa-arrow-right arrow" id="arrowBackCard2" onclick="infoAbtMeClose()"></i>
-                    
+                    <div class="card-card">
+                        <div class="text">
+                            <p class="small-paragraph">Whenever I don't develop websites, I mostly workout and play footbal, but when I do develop websites, I tend to use <a style="color: unset; text-decoration: underline;" href="https://www.djangoproject.com/">Django</a> as my framework. My code is clean, easy to understand and nicely structured<br><br>I got around 3 years of experience as a web developer, but because of my age, I haven't had time to get a job yet, but I am in the looks for one now!<br><br>Got any questions? <a style="color: unset; text-decoration: underline;" href="/get-in-touch">Ask me anything!</a></p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- What I do -->
+                 <div class="card" id="whatIDoCard">
+                    <h1 class="card-heading">What I do</h1>
+                    <p class="headingp">Feel free to scroll here</p>
+                    <i class="fa-solid fa-arrow-right arrow" id="arrowBackCard3" onclick="whatIDoClose()"></i>
+                    <div class="skills">
+                        <div class="skill html">
+                            <div class="icon">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="skill-text">
+                                <h1>Html</h1>
+                                <p class="small-paragraph">The first thing you do when learing to code websites, is to learn Html. As of now, I have mastered Html</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="icon">
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-text">
+                                <h1>Css</h1>
+                                <p class="small-paragraph">Every website must have a responsive, modern, profesionall and strucutured design. I am using Scss to achieve that</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="icon">
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <div class="skill-text">
+                                <h1>JavaScript</h1>
+                                <p class="small-paragraph">Every single animation you have seen so far, I have used JavaScript to make it happen</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="icon">
+                                <i class="fa-brands fa-git-alt"></i>
+                            </div>
+                            <div class="skill-text">
+                                <h1>Git</h1>
+                                <p class="small-paragraph">As a team, many use Git to structure and to work on projects. I have been using Git a long time now</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="icon">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="skill-text">
+                                <h1>Python/Django</h1>
+                                <p class="small-paragraph">Django is a framework, witch is written in Python. Django is a framework I got good at</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="bottom-cover">
+            <div class="bottom-cover" id="bottomCover">
                 <div class="bottom-cover-text" id="bottomCoverText">
                   <p class="small-paragraph bottom-text">The simpler, <span>the better.</span></p>
                 </div>
