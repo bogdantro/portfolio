@@ -374,7 +374,7 @@
                     .skills{
                         margin-inline: auto;
                         display: flex;
-                        overflow: scroll !important;
+                        overflow-x: scroll !important;
                         width: 100%;
                         padding-bottom: 40px;
                         .skill{
