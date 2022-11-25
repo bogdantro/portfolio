@@ -276,7 +276,7 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
-    padding: 40px;
+    padding: 20px;
     background: #215074;
     border: none;
     z-index: 10000000000000000000000;
@@ -296,12 +296,11 @@
     font-size: 22px;
     color: #F9F6EE;
     padding-bottom: 25px;
-    transform: translateY(-10px);
   }
   .about-me-des .cards .card .arrow {
     position: absolute;
     right: 5px;
-    top: 32px;
+    top: 20px;
     color: #F9F6EE;
     opacity: 0;
     font-size: 26px;
@@ -317,10 +316,10 @@
     opacity: 1;
   }
   .about-me-des .cards .card#myGoalCardDes .y-line {
-    height: 60px;
+    height: 50px;
     width: 2px;
     background: rgba(255, 255, 255, 0.3);
-    margin: 20px auto;
+    margin: 15px auto;
     border-radius: 20px;
   }
   .about-me-des .cards .card#myGoalCardDes .card-card {
@@ -328,7 +327,7 @@
     max-width: 450px;
     position: relative;
     margin: auto;
-    padding: 25px 35px;
+    padding: 15px 25px;
     border-radius: 12px;
   }
   .about-me-des .cards .card#myGoalCardDes .card-card .text {
