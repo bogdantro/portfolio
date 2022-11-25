@@ -240,7 +240,7 @@
                 z-index: 1000000000000000000000;
                 pointer-events: none !important;
                 &.active{
-                    background: rgba(0,0,0,0.35);
+                    background: rgba(0,0,0,0.38);
                 }
             }
             .opener{
@@ -275,7 +275,7 @@
                 left: 50%;
                 top: 50%;
                 transform: translateX(-50%) translateY(-50%) scale(0.8);
-                padding: 20px;
+                padding: 30px;
                 background: #215074;
                 border: none;
                 z-index: 10000000000000000000000;
@@ -284,6 +284,7 @@
                 height: auto;
                 opacity: 0;
                 pointer-events: none;
+                border-radius: 12px;
                 &.active{
                     transition: .5s;
                     opacity: 1;
@@ -333,10 +334,10 @@
                             margin: auto;
                             h1{
                                 color: #F9F6EE;
-                                font-size: 20px;
+                                font-size: 18px;
                             }
                             .small-paragraph{
-                                font-size: 16px;
+                                font-size: 15px;
                             }
                         }
                     }

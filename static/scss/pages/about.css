@@ -242,7 +242,7 @@
     pointer-events: none !important;
   }
   .about-me-des .cards .overlay.active {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.38);
   }
   .about-me-des .cards .opener {
     font-size: 17px;
@@ -276,7 +276,7 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
-    padding: 20px;
+    padding: 30px;
     background: #215074;
     border: none;
     z-index: 10000000000000000000000;
@@ -285,6 +285,7 @@
     height: auto;
     opacity: 0;
     pointer-events: none;
+    border-radius: 12px;
   }
   .about-me-des .cards .card.active {
     transition: 0.5s;
@@ -336,10 +337,10 @@
   }
   .about-me-des .cards .card#myGoalCardDes .card-card .text h1 {
     color: #F9F6EE;
-    font-size: 20px;
+    font-size: 18px;
   }
   .about-me-des .cards .card#myGoalCardDes .card-card .text .small-paragraph {
-    font-size: 16px;
+    font-size: 15px;
   }
   .about-me-des .cards .card .headingp {
     color: #64FFDA;
