@@ -290,7 +290,7 @@
   .about-me-des .cards .card.active {
     transition: 0.5s;
     opacity: 1;
-    pointer-events: visible;
+    pointer-events: visible !important;
     transform: scale(1) translateX(-50%) translateY(-50%);
   }
   .about-me-des .cards .card .card-heading {
@@ -355,25 +355,42 @@
   .about-me-des .cards .card#infoAbtMeCardDes .text .small-paragraph {
     font-size: 16px;
   }
-  .about-me-des .cards .card#whatIDoCardDes {
-    overflow: hidden;
+  .about-me-des .cards .card#whatIDoCardDes .arrow {
+    top: 35px;
+  }
+  .about-me-des .cards .card#whatIDoCardDes .card-heading {
+    padding-bottom: 0;
+  }
+  .about-me-des .cards .card#whatIDoCardDes .headingp {
+    color: #64FFDA;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 0 !important;
+    opacity: 0.9;
+    padding-bottom: 25px;
   }
   .about-me-des .cards .card#whatIDoCardDes .skills {
     margin-inline: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: scroll;
+    overflow: scroll !important;
+    width: 100%;
+    padding-bottom: 40px;
   }
   .about-me-des .cards .card#whatIDoCardDes .skills .skill {
+    flex: 1;
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    width: 320px;
+    min-width: 320px !important;
     height: 200px;
     margin: 0px 0;
     border-radius: 4px;
     background: #2b5e85;
+    margin-inline: 15px;
+  }
+  .about-me-des .cards .card#whatIDoCardDes .skills .skill.html {
+    margin-left: 0;
   }
   .about-me-des .cards .card#whatIDoCardDes .skills .skill .icon {
     width: -webkit-max-content;

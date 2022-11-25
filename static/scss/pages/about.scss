@@ -288,7 +288,7 @@
                 &.active{
                     transition: .5s;
                     opacity: 1;
-                    pointer-events: visible;
+                    pointer-events: visible !important;
                     transform: scale(1) translateX(-50%) translateY(-50%);
                 }
                 .card-heading{
@@ -356,22 +356,41 @@
                     }
                 }
                 &#whatIDoCardDes{
-                    overflow: hidden;
+                    .arrow{
+                        top: 35px;
+                    }
+                    .card-heading{
+                        padding-bottom: 0;
+                    }
+                    .headingp{
+                        color: #64FFDA;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        margin-top: 5px;
+                        margin-bottom: 0 !important;
+                        opacity: 0.9;
+                        padding-bottom: 25px;
+                    }
                     .skills{
                         margin-inline: auto;
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        overflow-x: scroll;
+                        overflow: scroll !important;
+                        width: 100%;
+                        padding-bottom: 40px;
                         .skill{
+                            flex: 1;
                             display: flex;
                             justify-content: space-between;
                             padding: 15px;
-                            width: 320px;
+                            min-width: 320px !important;
                             height: 200px;
                             margin: 0px 0;
                             border-radius: 4px;
                             background: #2b5e85;
+                            margin-inline: 15px;
+                            &.html{
+                                margin-left: 0;
+                            }
                             .icon{
                                 width: max-content;
                                 i{
