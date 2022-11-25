@@ -355,6 +355,9 @@
   .about-me-des .cards .card#infoAbtMeCardDes .text .small-paragraph {
     font-size: 16px;
   }
+  .about-me-des .cards .card#whatIDoCardDes {
+    background: #215074 !important;
+  }
   .about-me-des .cards .card#whatIDoCardDes .arrow {
     top: 35px;
   }
@@ -402,7 +405,7 @@
     height: 200px;
     margin: 0px 0;
     border-radius: 4px;
-    background: rgb(55, 101, 139);
+    background: #2b5e85;
     margin-inline: 15px;
   }
   .about-me-des .cards .card#whatIDoCardDes .skills .skill.html {
