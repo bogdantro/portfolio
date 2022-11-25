@@ -426,6 +426,22 @@
     overflow-x: scroll;
     padding-bottom: 30px;
   }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: transparent;
+    padding-block: 10px;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info::-webkit-scrollbar {
+    height: 6px;
+    background-color: transparent;
+    padding-block: 10px;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info::-webkit-scrollbar-thumb {
+    padding-block: 10px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.6588235294);
+  }
   .about-me-des .cards .card#howIMadeWebCardDes .web-info .card-card {
     border: 1px solid #64FFDA;
     min-width: 370px;
