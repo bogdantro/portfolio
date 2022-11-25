@@ -232,6 +232,9 @@
     font-size: 22px;
     transition: 0.4s;
     cursor: pointer;
+    position: relative;
+    pointer-events: visible;
+    z-index: 1000000;
   }
   .cover .content .text .icons i:last-child {
     margin-right: 0;

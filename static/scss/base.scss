@@ -221,6 +221,9 @@
                     font-size: 22px;
                     transition: .4s;
                     cursor: pointer;
+                    position: relative;
+                    pointer-events: visible;
+                    z-index: 1000000;
                     &:last-child{
                         margin-right: 0;
                     }    
