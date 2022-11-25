@@ -113,3 +113,36 @@ function howIMadeWebClose(){
 
     arrowBackCard.classList.remove('active');
 }
+
+
+
+if ($(window).width() > 1149) {
+    function myGoalDes(){
+        const mygoal = document.getElementById('myGoalCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes1')
+        
+        const overlay = document.getElementById('overlay')
+
+        mygoal.classList.add('active');
+
+        overlay.classList.add('active');
+    
+        setTimeout(() => {
+            arrowBackCard.classList.add('active');
+        }, 350);
+    }
+    
+    function myGoalCloseDes(){
+        const mygoal = document.getElementById('myGoalCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes1')
+        
+        const overlay = document.getElementById('overlay')
+
+        mygoal.classList.remove('active');
+
+        overlay.classList.remove('active')
+    
+        arrowBackCard.classList.remove('active');
+    }
+    
+}

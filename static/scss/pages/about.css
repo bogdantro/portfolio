@@ -224,8 +224,25 @@
   }
   .about-me-des .cards {
     width: 100%;
-    margin-top: 25px;
+    max-width: 1155px;
+    margin-top: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .about-me-des .cards .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000000000000000000000;
+    pointer-events: none !important;
+  }
+  .about-me-des .cards .overlay.active {
+    background: rgba(0, 0, 0, 0.35);
   }
   .about-me-des .cards .opener {
     font-size: 17px;
@@ -235,79 +252,95 @@
     padding: 10px;
     border-radius: 4px;
     margin-block: 28px;
+    width: 300px;
+    height: 150px;
+    margin-inline: 15px;
+    background: rgba(240, 240, 240, 0.09);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .about-me-des .cards .opener:hover {
+    transform: scale(1.07);
   }
   .about-me-des .cards .opener:first-child {
-    margin-top: 0;
+    margin-left: 0;
+  }
+  .about-me-des .cards .opener:last-child {
+    margin-right: 0;
   }
   .about-me-des .cards .card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    padding: 40px;
     background: #215074;
     border: none;
-    z-index: 10000;
+    z-index: 10000000000000000000000;
     transition: 0.9s;
-    position: absolute;
-    right: -100%;
-    top: 0;
+    width: 80%;
+    height: auto;
     opacity: 0;
-    width: 100%;
-    height: 100%;
     pointer-events: none;
   }
+  .about-me-des .cards .card.active {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: visible;
+    transform: scale(1) translateX(-50%) translateY(-50%);
+  }
   .about-me-des .cards .card .card-heading {
-    font-size: 20px;
+    font-size: 22px;
     color: #F9F6EE;
-    margin-top: 40px;
+    padding-bottom: 25px;
+    transform: translateY(-10px);
   }
   .about-me-des .cards .card .arrow {
     position: absolute;
     right: 5px;
-    top: 43px;
+    top: 32px;
     color: #F9F6EE;
-    opacity: 0.9;
-    font-size: 22px;
+    opacity: 0;
+    font-size: 26px;
     padding: 8px;
     margin: -8px;
     opacity: 0;
     transition: 0.5s;
+    border-radius: 12px;
+    cursor: pointer;
   }
   .about-me-des .cards .card .arrow.active {
-    right: 35px;
+    right: 105px;
     opacity: 1;
   }
-  .about-me-des .cards .card .card-card {
-    width: 85%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding: 20px;
-    background: #2b5e85;
-    margin: 0 auto;
-    position: relative;
-    top: 40px;
-  }
-  .about-me-des .cards .card .card-card .text {
-    margin: 0;
-    text-align: center;
-  }
-  .about-me-des .cards .card .card-card .text h1, .about-me-des .cards .card .card-card .text p {
-    margin: 0;
-  }
-  .about-me-des .cards .card .card-card .text h1 {
-    font-size: 18px;
-    color: #F9F6EE;
-  }
-  .about-me-des .cards .card .card-card .text p {
-    margin-top: 6px;
-    font-size: 16px !important;
-  }
-  .about-me-des .cards .card .y-line {
-    display: block;
-    position: relative;
-    top: 50px;
-    background: rgba(255, 255, 255, 0.15);
+  .about-me-des .cards .card#myGoalCardDes .y-line {
+    height: 60px;
     width: 2px;
-    height: 40px;
-    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 20px auto;
     border-radius: 20px;
+  }
+  .about-me-des .cards .card#myGoalCardDes .card-card {
+    border: 1px solid #64FFDA;
+    max-width: 450px;
+    position: relative;
+    margin: auto;
+    padding: 25px 35px;
+    border-radius: 12px;
+  }
+  .about-me-des .cards .card#myGoalCardDes .card-card .text {
+    text-align: center;
+    margin: auto;
+  }
+  .about-me-des .cards .card#myGoalCardDes .card-card .text h1 {
+    color: #F9F6EE;
+    font-size: 20px;
+  }
+  .about-me-des .cards .card#myGoalCardDes .card-card .text .small-paragraph {
+    font-size: 16px;
   }
   .about-me-des .cards .card .headingp {
     color: #64FFDA;
@@ -365,12 +398,6 @@
     height: auto;
     position: relative;
     top: 100px;
-  }
-  .about-me-des .cards .card.active {
-    transition: 0.5s;
-    opacity: 1;
-    right: 0;
-    pointer-events: visible;
   }
 }
 @media only screen and (min-device-width: 1450px) {
