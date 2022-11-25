@@ -276,7 +276,7 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
-    padding: 30px;
+    padding: 30px 15px;
     background: #215074;
     border: none;
     z-index: 10000000000000000000000;
@@ -285,7 +285,7 @@
     height: auto;
     opacity: 0;
     pointer-events: none;
-    border-radius: 12px;
+    border-radius: 4px;
   }
   .about-me-des .cards .card.active {
     transition: 0.5s;
@@ -294,7 +294,7 @@
     transform: scale(1) translateX(-50%) translateY(-50%);
   }
   .about-me-des .cards .card .card-heading {
-    font-size: 22px;
+    font-size: 23px;
     color: #F9F6EE;
     padding-bottom: 25px;
   }
@@ -313,7 +313,7 @@
     cursor: pointer;
   }
   .about-me-des .cards .card .arrow.active {
-    right: 105px;
+    right: 125px;
     opacity: 1;
   }
   .about-me-des .cards .card#myGoalCardDes .y-line {
@@ -342,55 +342,55 @@
   .about-me-des .cards .card#myGoalCardDes .card-card .text .small-paragraph {
     font-size: 15px;
   }
-  .about-me-des .cards .card .headingp {
-    color: #64FFDA;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin-top: 5px;
-    margin-bottom: 0 !important;
-    opacity: 0.9;
-    padding-bottom: 10px;
+  .about-me-des .cards .card#infoAbtMeCardDes {
+    padding-block: 50px;
   }
-  .about-me-des .cards .card .skills {
-    height: auto;
-    width: 85%;
+  .about-me-des .cards .card#infoAbtMeCardDes .arrow {
+    top: 52px;
+  }
+  .about-me-des .cards .card#infoAbtMeCardDes .text {
+    margin-top: 0;
+    padding: 10px 90px;
+  }
+  .about-me-des .cards .card#infoAbtMeCardDes .text .small-paragraph {
+    font-size: 16px;
+  }
+  .about-me-des .cards .card#whatIDoCardDes {
+    overflow: hidden;
+  }
+  .about-me-des .cards .card#whatIDoCardDes .skills {
     margin-inline: auto;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
   }
-  .about-me-des .cards .card .skills::-webkit-scrollbar {
-    display: none;
-  }
-  .about-me-des .cards .card .skills .skill {
+  .about-me-des .cards .card#whatIDoCardDes .skills .skill {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    width: 100%;
-    height: auto;
-    margin: 40px 0;
+    width: 320px;
+    height: 200px;
+    margin: 0px 0;
     border-radius: 4px;
     background: #2b5e85;
   }
-  .about-me-des .cards .card .skills .skill .icon {
+  .about-me-des .cards .card#whatIDoCardDes .skills .skill .icon {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
   }
-  .about-me-des .cards .card .skills .skill .icon i {
+  .about-me-des .cards .card#whatIDoCardDes .skills .skill .icon i {
     color: #F9F6EE;
     font-size: 40px;
   }
-  .about-me-des .cards .card .skills .skill .skill-text {
+  .about-me-des .cards .card#whatIDoCardDes .skills .skill .skill-text {
     text-align: left;
     width: 75%;
   }
-  .about-me-des .cards .card .skills .skill .skill-text h1 {
+  .about-me-des .cards .card#whatIDoCardDes .skills .skill .skill-text h1 {
     color: #F9F6EE;
     font-size: 20px;
-  }
-  .about-me-des .cards .card .skills .skill.html {
-    margin-top: 20px;
   }
   .about-me-des .cards .card#infoAbtCatCard img {
     margin-inline: auto;

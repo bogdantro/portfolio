@@ -144,5 +144,59 @@ if ($(window).width() > 1149) {
     
         arrowBackCard.classList.remove('active');
     }
+    function infoAbtMeDes(){
+        const infoAbtMe = document.getElementById('infoAbtMeCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes2')
+        
+        const overlay = document.getElementById('overlay')
+
+        infoAbtMe.classList.add('active');
+
+        overlay.classList.add('active');
+    
+        setTimeout(() => {
+            arrowBackCard.classList.add('active');
+        }, 350);
+    }
+    
+    function infoAbtMeDesClose(){
+        const infoAbtMe = document.getElementById('infoAbtMeCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes2')
+        
+        const overlay = document.getElementById('overlay')
+
+        infoAbtMe.classList.remove('active');
+
+        overlay.classList.remove('active')
+    
+        arrowBackCard.classList.remove('active');
+    }
+    function whatIDoDes(){
+        const whatIDo = document.getElementById('whatIDoCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes3')
+        
+        const overlay = document.getElementById('overlay')
+
+        whatIDo.classList.add('active');
+
+        overlay.classList.add('active');
+    
+        setTimeout(() => {
+            arrowBackCard.classList.add('active');
+        }, 350);
+    }
+    
+    function whatIDoDesClose(){
+        const whatIDo = document.getElementById('whatIDoCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes3')
+        
+        const overlay = document.getElementById('overlay')
+
+        whatIDo.classList.remove('active');
+
+        overlay.classList.remove('active')
+    
+        arrowBackCard.classList.remove('active');
+    }
     
 }
