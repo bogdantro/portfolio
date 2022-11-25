@@ -350,7 +350,7 @@
   }
   .about-me-des .cards .card#infoAbtMeCardDes .text {
     margin-top: 0;
-    padding: 10px 90px;
+    padding: 10px 140px;
   }
   .about-me-des .cards .card#infoAbtMeCardDes .text .small-paragraph {
     font-size: 16px;
@@ -408,6 +408,53 @@
   .about-me-des .cards .card#whatIDoCardDes .skills .skill .skill-text h1 {
     color: #F9F6EE;
     font-size: 20px;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .card-heading {
+    padding-bottom: 0;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .headingp {
+    color: #64FFDA;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 0 !important;
+    opacity: 0.9;
+    padding-bottom: 35px;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info .card-card {
+    border: 1px solid #64FFDA;
+    min-width: 370px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative;
+    margin: auto;
+    padding: 15px 25px;
+    border-radius: 12px;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info .card-card .text {
+    text-align: center;
+    margin: auto;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info .card-card .text h1 {
+    color: #F9F6EE;
+    font-size: 18px;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info .card-card .text .small-paragraph {
+    font-size: 15px;
+  }
+  .about-me-des .cards .card#howIMadeWebCardDes .web-info .x-line {
+    min-width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    display: block;
+    position: relative;
+    margin: auto 15px;
   }
   .about-me-des .cards .card#infoAbtCatCard img {
     margin-inline: auto;

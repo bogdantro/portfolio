@@ -153,8 +153,8 @@
                 <h1 class="opener" onclick="myGoalDes()">My goal</h1>
                 <h1 class="opener" onclick="infoAbtMeDes()">Some text about me</h1>
                 <h1 class="opener" onclick="whatIDoDes()">What I do</h1>
-                <h1 class="opener" onclick="infoAbtCat()">Info about my cat</h1>
-                <h1 class="opener" onclick="howIMadeWeb()">How I made this website</h1>
+                <h1 class="opener" onclick="infoAbtCatDes()">Info about my cat</h1>
+                <h1 class="opener" onclick="howIMadeWebDes()">How I made this website</h1>
                 <!-- My goal -->
                 <div class="card" id="myGoalCardDes">
                     <h1 class="card-heading">My goal</h1>
@@ -237,39 +237,39 @@
                     </div>
                 </div>
                 <!-- Info about my cat -->
-                <!-- <div class="card" id="infoAbtCatCard">
+                <div class="card" id="infoAbtCatCardDes">
                     <h1 class="card-heading" style="margin-right: 10px;">Info about my cat</h1>
-                    <i class="fa-solid fa-arrow-right arrow" id="arrowBackCard4" onclick="infoAbtCatClose()"></i>
+                    <i class="fa-solid fa-arrow-right arrow" id="arrowBackCardDes4" onclick="infoAbtCatDesClose()"></i>
                     <div class="card-card">
-                        <div class="text">
+                        <div class="text" style="margin-top: 0;">
                             <p class="small-paragraph">Baghera, a lazy ass cat</p>
                         </div>
                     </div>
-                    <img src="{% static 'images/other/cat.jpg' %}" alt="">
-                </div> -->
+                    <img style="max-width: 100px; margin: 30px auto 5px auto;" src="{% static 'images/other/cat.jpg' %}" alt="">
+                </div>
                 <!-- How I made this website -->
-                <!-- <div class="card" id="howIMadeWebCard">
+                <div class="card" id="howIMadeWebCardDes">
                     <h1 class="card-heading" style="margin-right: 10px;">How I made this website</h1>
                     <p class="headingp">Feel free to scroll here</p>
-                    <i class="fa-solid fa-arrow-right arrow" id="arrowBackCard5" onclick="howIMadeWebClose()"></i>
-                    <div class="web-info" style="overflow-y: scroll; padding-bottom: 120px;">
+                    <i class="fa-solid fa-arrow-right arrow" id="arrowBackCardDes5" onclick="howIMadeWebDesClose()"></i>
+                    <div class="web-info">
                         <div class="card-card">
                             <p style="font-size: 16px;" class="small-paragraph">It started off as a very simple website<br><br>I liked the design it had, but the more I looked at it, the less I liked it. I went on google to get some inspiration<br><br>Then I came up with a design</p>
                         </div>
-                        <span class="y-line"></span>
-                        <div class="card-card" style="transform: translateY(17px);">
+                        <span class="x-line"></span>
+                        <div class="card-card">
                             <p style="font-size: 16px;" class="small-paragraph">The design was scrollable, and all the info was on one page<br><br>I improved the design as I kept working on the website<br><br>Note: I didn't use figma or adobe XD, I came up with a design in my mind, and kept improving as I kept coding</p>
                         </div>
-                        <span class="y-line" style="top: 67px; height: 100px;"></span>
-                        <div class="card-card" style="transform: translateY(35px);">
+                        <span class="x-line" style="min-width: 130px;"></span>
+                        <div class="card-card">
                             <p style="font-size: 16px;" class="small-paragraph">I finnished the website, and again, I started to dislike the design more and more<br><br>I then started from scratch, and this time I will be 100% satisfied</p>
                         </div>
-                        <span class="y-line" style="top: 82px;"></span>
-                        <div class="card-card" style="transform: translateY(50px);">
+                        <span class="x-line"></span>
+                        <div class="card-card">
                             <p style="font-size: 16px;" class="small-paragraph">The end product is this website<br><br>Simple, modern and responsive. I am very satisfied with the design, and I hope you are aswell!</p>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>

@@ -116,6 +116,10 @@ function howIMadeWebClose(){
 
 
 
+
+
+
+
 if ($(window).width() > 1149) {
     function myGoalDes(){
         const mygoal = document.getElementById('myGoalCardDes')
@@ -193,6 +197,60 @@ if ($(window).width() > 1149) {
         const overlay = document.getElementById('overlay')
 
         whatIDo.classList.remove('active');
+
+        overlay.classList.remove('active')
+    
+        arrowBackCard.classList.remove('active');
+    }
+    function infoAbtCatDes(){
+        const infoAbtCat = document.getElementById('infoAbtCatCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes4')
+        
+        const overlay = document.getElementById('overlay')
+
+        infoAbtCat.classList.add('active');
+
+        overlay.classList.add('active');
+    
+        setTimeout(() => {
+            arrowBackCard.classList.add('active');
+        }, 350);
+    }
+    
+    function infoAbtCatDesClose(){
+        const infoAbtCat = document.getElementById('infoAbtCatCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes4')
+        
+        const overlay = document.getElementById('overlay')
+
+        infoAbtCat.classList.remove('active');
+
+        overlay.classList.remove('active')
+    
+        arrowBackCard.classList.remove('active');
+    }
+    function howIMadeWebDes(){
+        const howIMadeWeb = document.getElementById('howIMadeWebCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes5')
+        
+        const overlay = document.getElementById('overlay')
+
+        howIMadeWeb.classList.add('active');
+
+        overlay.classList.add('active');
+    
+        setTimeout(() => {
+            arrowBackCard.classList.add('active');
+        }, 350);
+    }
+    
+    function howIMadeWebDesClose(){
+        const howIMadeWeb = document.getElementById('howIMadeWebCardDes')
+        const arrowBackCard = document.getElementById('arrowBackCardDes5')
+        
+        const overlay = document.getElementById('overlay')
+
+        howIMadeWeb.classList.remove('active');
 
         overlay.classList.remove('active')
     

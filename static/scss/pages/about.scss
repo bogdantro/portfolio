@@ -349,7 +349,7 @@
                     }
                     .text{
                         margin-top: 0;
-                        padding: 10px 90px;
+                        padding: 10px 140px;
                         .small-paragraph{
                             font-size: 16px;
                         }
@@ -406,6 +406,53 @@
                                     font-size: 20px;
                                 }
                             }
+                        }
+                    }
+                }
+                &#howIMadeWebCardDes{
+                    .card-heading{
+                        padding-bottom: 0;
+                    }
+                    .headingp{
+                        color: #64FFDA;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        margin-top: 5px;
+                        margin-bottom: 0 !important;
+                        opacity: 0.9;
+                        padding-bottom: 35px;
+                    }
+                    .web-info{
+                        display: flex;
+                        overflow-x: scroll;
+                        padding-bottom: 30px;
+                        .card-card{
+                            border: 1px solid #64FFDA;
+                            min-width: 370px;
+                            height: max-content;
+                            position: relative;
+                            margin: auto;
+                            padding: 15px 25px;
+                            border-radius: 12px;
+                            .text{
+                                text-align: center;
+                                margin: auto;
+                                h1{
+                                    color: #F9F6EE;
+                                    font-size: 18px;
+                                }
+                                .small-paragraph{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        .x-line{
+                            min-width: 60px;
+                            height: 2px;
+                            background: rgba(255,255,255,0.3);
+                            display: block;
+                            position: relative;
+                            margin: auto 15px;
                         }
                     }
                 }
