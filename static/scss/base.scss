@@ -132,8 +132,9 @@
                 right: 30px;
                 left: unset;
                 opacity: unset;
-                cursor: default;
+                cursor: pointer;
                 img{
+                    pointer-events: visible;
                     width: 200px;
                     max-width: 200px;
                     height: auto;
@@ -320,7 +321,6 @@
                     max-width: 240px;
                     height: auto;
                     opacity: 0.7;
-                    cursor: pointer;
                     transition: .5s;
                     &:hover{
                         transform: scale(1.08);

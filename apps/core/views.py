@@ -22,9 +22,6 @@ def home(request):
     # Pages
 def about(request):
     return render(request, 'pages/about.html')
-
-def skills(request):
-    return render(request, 'pages/skills.html')
     
 def contact(request):
     if request.method=='POST' and 'contact' in request.POST:
@@ -50,12 +47,3 @@ def contact(request):
         return redirect('/')
     return render(request, 'pages/contact.html')  
 
-    # Projects
-def project_webiser(request):
-    return render(request, 'pages/projects/webiser.html')
-
-def project_stellcare(request):
-    return render(request, 'pages/projects/stellcare.html')
-
-def project_gglhmr(request):
-    return render(request, 'pages/projects/gglhmr.html')

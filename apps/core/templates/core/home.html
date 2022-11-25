@@ -156,29 +156,3 @@
   </div>
 </div>
 {% endblock %}
-<div class="contact-us page-for-form" id="contactForm" style="opacity: 0; transform: translateX(-200px); padding-top: 100px; margin-top: -100px;">
-    <img src="{% static 'images/other/purple-sky.jpg' %}" alt="" class="contact-us-img">
-    <form id="contactUs" action="" method="POST">
-       <h1 class="heading">Let's get started!</h1>
-        {% csrf_token %}
-        <br>
-        <div class="inputs-labels">
-           <label for="navn">Name</label>
-           <br>
-           <input type="text" name="navn" required oninvalid="this.setCustomValidity('Værsåsnill, skriv inn navn')" oninput="this.setCustomValidity('')">
-           <br>
-           <br>
-           <label for="email">Email</label>
-           <br>
-           <input type="email" name="email" required oninvalid="this.setCustomValidity('Værsåsnill, skirv inn epost')" oninput="this.setCustomValidity('')">
-           <br>
-           <br>
-           <label for="message">Got anything to tell me?</label>
-           <br>
-           <textarea name="message" required oninvalid="this.setCustomValidity('Værsåsnill, skriv inn beskjed')" oninput="this.setCustomValidity('')"></textarea>
-          </div>
-        <div class="form-actions">
-          <button type="submit" name="contact" value="contact" class="primary">Send email</button>
-        </div>
-      </form>
-   </div>
