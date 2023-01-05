@@ -9,6 +9,7 @@ urlpatterns = [
     path('', home, name='home'),
     # Pages
     path('about-me', about, name='about'),
+    path('projects', projects, name='projects'),
     path('get-in-touch', contact, name='contact'),
 
 
