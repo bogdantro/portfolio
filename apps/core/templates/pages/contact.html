@@ -30,17 +30,17 @@
         <div class="inputs-labels">
            <label for="navn">Name</label>
            <br>
-           <input type="text" name="navn" placeholder="Your name" required oninvalid="this.setCustomValidity('Whats your name?')" oninput="this.setCustomValidity('')">
+           <input type="text" name="name" id="name" placeholder="Your name" required oninvalid="this.setCustomValidity('Whats your name?')" oninput="this.setCustomValidity('')">
            <br>
            <br>
            <label for="email">Email</label>
            <br>
-           <input type="email" name="email" placeholder="Your email" required oninvalid="this.setCustomValidity('Need this to contact you back')" oninput="this.setCustomValidity('')">
+           <input type="email" name="email" id="email" placeholder="Your email" required oninvalid="this.setCustomValidity('Need this to contact you back')" oninput="this.setCustomValidity('')">
            <br>
            <br>
            <label for="message">What do you want to tell me?</label>
            <br>
-           <textarea name="message" placeholder="What do you want to tell me?" required oninvalid="this.setCustomValidity('Tell me wassup')" oninput="this.setCustomValidity('')"></textarea>
+           <textarea name="message" id="message" placeholder="What do you want to tell me?" required oninvalid="this.setCustomValidity('Tell me wassup')" oninput="this.setCustomValidity('')"></textarea>
           </div>
         <div class="form-actions">
           <button class="primary" type="submit" name="contact" value="contact">Send email</button>

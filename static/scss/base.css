@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 .cover {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   transition: 0.2s;
@@ -46,6 +45,7 @@
   margin-top: 25px;
   padding-left: 2px;
   font-size: 16px;
+  opacity: 0.7;
 }
 .cover .content .text h1 {
   color: rgba(249, 246, 238, 0.8705882353);
@@ -54,7 +54,7 @@
   margin-bottom: 9px;
 }
 .cover .content .text h1.opacity {
-  opacity: 0.6;
+  opacity: 0.8;
   font-size: 35px;
   margin-top: 10px;
 }
@@ -154,7 +154,6 @@
     right: -92%;
     top: 265px;
     width: 400px;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     pointer-events: none;
@@ -188,10 +187,8 @@
   }
   .cover .content .text {
     text-align: left;
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     position: relative;
@@ -229,7 +226,7 @@
     padding: 4px;
     color: rgb(171, 186, 197);
     opacity: 0.8;
-    font-size: 22px;
+    font-size: 23px;
     transition: 0.4s;
     cursor: pointer;
     position: relative;
@@ -260,7 +257,6 @@
     position: relative;
     left: 0;
     top: 25px;
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     height: 100%;
@@ -281,7 +277,6 @@
   }
   .cover .content .timeline .time {
     width: 100%;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     display: flex;
@@ -311,6 +306,11 @@
   }
   .cover .content .timeline .time p:last-child {
     margin-left: 20px;
+  }
+  .cover .content .timeline .time a {
+    color: white;
+    opacity: 1.4;
+    text-decoration: underline;
   }
 }
 @media only screen and (min-device-width: 1450px) {
@@ -347,7 +347,6 @@
     right: -95%;
     top: 285px;
     width: 400px;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     pointer-events: none;
@@ -372,10 +371,8 @@
   }
   .cover .content .text {
     text-align: left;
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     position: relative;
@@ -412,7 +409,7 @@
     padding: 4px;
     color: rgb(171, 186, 197);
     opacity: 0.8;
-    font-size: 23px;
+    font-size: 24px;
     transition: 0.4s;
     cursor: pointer;
   }
@@ -440,7 +437,6 @@
     position: relative;
     left: 0;
     top: 80px;
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     height: 100%;
@@ -461,7 +457,6 @@
   }
   .cover .content .timeline .time {
     width: 100%;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     display: flex;

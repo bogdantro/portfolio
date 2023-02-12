@@ -217,18 +217,6 @@ if ($(window).width() > 1149) {
         }, 350);
     }
     
-    function infoAbtCatDesClose(){
-        const infoAbtCat = document.getElementById('infoAbtCatCardDes')
-        const arrowBackCard = document.getElementById('arrowBackCardDes4')
-        
-        const overlay = document.getElementById('overlay')
-
-        infoAbtCat.classList.remove('active');
-
-        overlay.classList.remove('active')
-    
-        arrowBackCard.classList.remove('active');
-    }
     function howIMadeWebDes(){
         const howIMadeWeb = document.getElementById('howIMadeWebCardDes')
         const arrowBackCard = document.getElementById('arrowBackCardDes5')

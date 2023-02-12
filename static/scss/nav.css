@@ -46,8 +46,7 @@
   transform: translateX(0) translateY(2px);
 }
 #mobileNav .hamburger.click1 span {
-  -webkit-animation: animation1 0.5s;
-          animation: animation1 0.5s;
+  animation: animation1 0.5s;
   transform: scale(1.15);
 }
 #mobileNav .hamburger.click1 .top-span {
@@ -58,23 +57,6 @@
 }
 #mobileNav .hamburger.click1 .bottom-span {
   width: 27px;
-}
-@-webkit-keyframes animation1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(480deg);
-  }
-  75% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 @keyframes animation1 {
   0% {
@@ -149,7 +131,6 @@
   text-align: unset;
   left: 50%;
   transform: translateY(145px) translateX(-50%);
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   pointer-events: visible;
@@ -234,7 +215,6 @@
     transform: scale(1.1);
   }
   #desNav .menu {
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     padding-inline: 10px;

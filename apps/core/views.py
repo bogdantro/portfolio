@@ -11,8 +11,7 @@ from textwrap import *
 from django.views.decorators.csrf import *
 from django.db.models import * 
 from django.contrib.auth.decorators import *
-from captcha.fields import ReCaptchaField
-from captcha.widgets import ReCaptchaV2Checkbox
+from .models import *
 
 
 # Home
@@ -27,26 +26,12 @@ def projects(request):
     return render(request, 'pages/projects.html')
     
 def contact(request):
-    if request.method=='POST' and 'contact' in request.POST:
-        navn = request.POST.get('navn')
-        email = request.POST.get('email')
-        message = request.POST.get('message')
+    if request.method == 'POST':
+        name = request.POST.get('name', )
+        email = request.POST.get('email', '')
+        message = request.POST.get('message', '')
 
-        captcha = ReCaptchaField(widget=ReCaptchaV2Checkbox())
-
-        data = {
-            'navn': navn,
-            'email': email,
-            'message': message,
-        }
-        message = dedent('''
-        Fra: {}
-
-        Navn: {}
-
-        Beskjed: {}
-        ''').format(data['email'], data['navn'], data['message'], )
-        send_mail('Epost fra portfolio', message, '', ['sabertoothtri@gmail.com'])
+        contact = Contact.objects.create(name=name, message=message, email=email)
         return redirect('/')
-    return render(request, 'pages/contact.html')  
+    return render(request, 'pages/contact.html')
 

@@ -76,10 +76,6 @@
   opacity: 0.3;
   color: #F9F6EE;
 }
-.page-for-form form .inputs-labels input:-ms-input-placeholder, .page-for-form form .inputs-labels textarea:-ms-input-placeholder {
-  opacity: 0.3;
-  color: #F9F6EE;
-}
 .page-for-form form .inputs-labels input::placeholder, .page-for-form form .inputs-labels textarea::placeholder {
   opacity: 0.3;
   color: #F9F6EE;
@@ -123,10 +119,8 @@
   .page-for-form .email {
     display: flex;
     align-items: center;
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     position: absolute;
@@ -156,10 +150,8 @@
   .page-for-form .socials {
     display: flex;
     align-items: center;
-    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     position: absolute;

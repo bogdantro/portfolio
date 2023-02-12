@@ -1,0 +1,42 @@
+.bottom-cover {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  pointer-events: visible;
+  opacity: 0.8;
+  z-index: 1000000000;
+}
+.bottom-cover .bottom-cover-text {
+  margin: 0;
+  transition: 0.2s;
+}
+.bottom-cover .bottom-cover-text .bottom-text {
+  margin: 0;
+  font-size: 12px;
+}
+.bottom-cover .bottom-cover-text .bottom-text span {
+  border-bottom: 1px solid rgba(100, 255, 219, 0.5490196078);
+  padding-bottom: 5px;
+}
+
+.projects {
+  padding-inline: 35px;
+  padding-top: 15px;
+}
+.projects h1 {
+  color: rgba(249, 246, 238, 0.8705882353);
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.projects p {
+  color: rgba(212, 212, 212, 0.8705882353);
+  font-size: 16px;
+  border-bottom: 2px solid #64FFDA;
+  padding-bottom: 15px;
+}/*# sourceMappingURL=projects.css.map */

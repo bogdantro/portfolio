@@ -166,27 +166,13 @@ button.secondary:hover {
   background-color: white;
 }
 .load-wrapp .load-2 .line:nth-last-child(1) {
-  -webkit-animation: loadingB 1.5s 1s infinite;
-          animation: loadingB 1.5s 1s infinite;
+  animation: loadingB 1.5s 1s infinite;
 }
 .load-wrapp .load-2 .line:nth-last-child(2) {
-  -webkit-animation: loadingB 1.5s 0.5s infinite;
-          animation: loadingB 1.5s 0.5s infinite;
+  animation: loadingB 1.5s 0.5s infinite;
 }
 .load-wrapp .load-2 .line:nth-last-child(3) {
-  -webkit-animation: loadingB 1.5s 0s infinite;
-          animation: loadingB 1.5s 0s infinite;
-}
-@-webkit-keyframes loadingB {
-  0% {
-    width: 15px;
-  }
-  50% {
-    width: 35px;
-  }
-  100% {
-    width: 15px;
-  }
+  animation: loadingB 1.5s 0s infinite;
 }
 @keyframes loadingB {
   0% {
