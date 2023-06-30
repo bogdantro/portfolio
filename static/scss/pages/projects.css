@@ -1,6 +1,6 @@
 .bottom-cover {
-  position: absolute;
-  bottom: 10px;
+  position: static;
+  bottom: 20px;
   left: 0;
   width: 100%;
   height: auto;
@@ -25,18 +25,319 @@
   padding-bottom: 5px;
 }
 
-.projects {
+html, body {
+  overflow-y: scroll !important;
+  scroll-behavior: smooth !important;
+}
+
+.projects-sec {
   padding-inline: 35px;
   padding-top: 15px;
+  padding-bottom: 50px;
 }
-.projects h1 {
+.projects-sec h1 {
   color: rgba(249, 246, 238, 0.8705882353);
   font-size: 28px;
   margin-bottom: 5px;
 }
-.projects p {
+.projects-sec p {
   color: rgba(212, 212, 212, 0.8705882353);
   font-size: 16px;
   border-bottom: 2px solid #64FFDA;
   padding-bottom: 15px;
+}
+.projects-sec .projects .project {
+  width: 100%;
+  height: auto;
+  padding: 18px 14px;
+  background: #2e6d9e;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.projects-sec .projects .project:last-child {
+  margin-bottom: 0;
+}
+.projects-sec .projects .project .top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #64FFDA;
+  padding-bottom: 15px;
+}
+.projects-sec .projects .project .top .name {
+  color: white;
+  font-size: 17px;
+}
+.projects-sec .projects .project .top .name .sub-name {
+  font-size: 13px;
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.projects-sec .projects .project .top .date {
+  color: rgba(241, 241, 241, 0.8705882353);
+  font-size: 14px;
+}
+.projects-sec .projects .project .bottom {
+  padding-top: 12px;
+}
+.projects-sec .projects .project .bottom .info {
+  font-size: 16px;
+  color: white;
+}
+.projects-sec .projects .project .bottom button {
+  margin-top: 18px;
+  height: 40px !important;
+  width: 100% !important;
+  background: transparent;
+  border: 1px solid #64FFDA;
+  color: #64FFDA;
+  font-weight: 400;
+  cursor: pointer;
+}
+.projects-sec .projects .project .bottom button:hover {
+  background: #245e8a;
+}
+
+@media only screen and (min-device-width: 1150px) {
+  .projects-sec {
+    padding-inline: 35px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  .projects-sec h1 {
+    color: rgba(249, 246, 238, 0.8705882353);
+    font-size: 31px;
+    margin-bottom: 5px;
+  }
+  .projects-sec p {
+    color: rgba(212, 212, 212, 0.8705882353);
+    font-size: 17px;
+    border-bottom: 2px solid #64FFDA;
+    padding-bottom: 15px;
+  }
+  .projects-sec .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .projects-sec .projects .project {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 18px 14px;
+    background: #2e6d9e;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    max-width: 370px;
+    margin-right: 28px;
+  }
+  .projects-sec .projects .project:first-child {
+    margin-left: 0;
+  }
+  .projects-sec .projects .project:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .projects-sec .projects .project .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #64FFDA;
+    padding-bottom: 20px;
+  }
+  .projects-sec .projects .project .top .name {
+    color: white;
+    font-size: 19px;
+  }
+  .projects-sec .projects .project .top .name .sub-name {
+    font-size: 15px;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .projects-sec .projects .project .top .date {
+    color: rgba(241, 241, 241, 0.8705882353);
+    font-size: 15px;
+  }
+  .projects-sec .projects .project .bottom {
+    padding-top: 16px;
+  }
+  .projects-sec .projects .project .bottom .info {
+    font-size: 17px;
+    color: white;
+  }
+  .projects-sec .projects .project .bottom button {
+    margin-top: 22px;
+    height: 40px !important;
+    width: 100% !important;
+    background: transparent;
+    border: 1px solid #64FFDA;
+    color: #64FFDA;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .projects-sec .projects .project .bottom button:hover {
+    background: #245e8a;
+  }
+}
+@media only screen and (min-device-width: 1450px) {
+  .projects-sec {
+    padding-inline: 75px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  .projects-sec h1 {
+    color: rgba(249, 246, 238, 0.8705882353);
+    font-size: 31px;
+    margin-bottom: 5px;
+  }
+  .projects-sec p {
+    color: rgba(212, 212, 212, 0.8705882353);
+    font-size: 17px;
+    border-bottom: 2px solid #64FFDA;
+    padding-bottom: 15px;
+  }
+  .projects-sec .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .projects-sec .projects .project {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 18px 14px;
+    background: #2e6d9e;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    max-width: 350px;
+    margin-right: 28px;
+  }
+  .projects-sec .projects .project:first-child {
+    margin-left: 0;
+  }
+  .projects-sec .projects .project:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .projects-sec .projects .project .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #64FFDA;
+    padding-bottom: 20px;
+  }
+  .projects-sec .projects .project .top .name {
+    color: white;
+    font-size: 19px;
+  }
+  .projects-sec .projects .project .top .name .sub-name {
+    font-size: 15px;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .projects-sec .projects .project .top .date {
+    color: rgba(241, 241, 241, 0.8705882353);
+    font-size: 15px;
+  }
+  .projects-sec .projects .project .bottom {
+    padding-top: 16px;
+  }
+  .projects-sec .projects .project .bottom .info {
+    font-size: 17px;
+    color: white;
+  }
+  .projects-sec .projects .project .bottom button {
+    margin-top: 22px;
+    height: 40px !important;
+    width: 100% !important;
+    background: transparent;
+    border: 1px solid #64FFDA;
+    color: #64FFDA;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .projects-sec .projects .project .bottom button:hover {
+    background: #245e8a;
+  }
+}
+@media only screen and (min-device-width: 1590px) {
+  .projects-sec {
+    padding-inline: 155px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  .projects-sec h1 {
+    color: rgba(249, 246, 238, 0.8705882353);
+    font-size: 31px;
+    margin-bottom: 5px;
+  }
+  .projects-sec p {
+    color: rgba(212, 212, 212, 0.8705882353);
+    font-size: 17px;
+    border-bottom: 2px solid #64FFDA;
+    padding-bottom: 15px;
+  }
+  .projects-sec .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .projects-sec .projects .project {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 18px 14px;
+    background: #2e6d9e;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    max-width: 350px;
+    margin-right: 28px;
+  }
+  .projects-sec .projects .project:first-child {
+    margin-left: 0;
+  }
+  .projects-sec .projects .project:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .projects-sec .projects .project .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #64FFDA;
+    padding-bottom: 20px;
+  }
+  .projects-sec .projects .project .top .name {
+    color: white;
+    font-size: 19px;
+  }
+  .projects-sec .projects .project .top .name .sub-name {
+    font-size: 15px;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .projects-sec .projects .project .top .date {
+    color: rgba(241, 241, 241, 0.8705882353);
+    font-size: 15px;
+  }
+  .projects-sec .projects .project .bottom {
+    padding-top: 16px;
+  }
+  .projects-sec .projects .project .bottom .info {
+    font-size: 17px;
+    color: white;
+  }
+  .projects-sec .projects .project .bottom button {
+    margin-top: 22px;
+    height: 40px !important;
+    width: 100% !important;
+    background: transparent;
+    border: 1px solid #64FFDA;
+    color: #64FFDA;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .projects-sec .projects .project .bottom button:hover {
+    background: #245e8a;
+  }
 }/*# sourceMappingURL=projects.css.map */
